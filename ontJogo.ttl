@@ -1,470 +1,467 @@
+@base <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/> .
 @prefix : <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToGenre
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToPlatform
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasInformation
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasMode
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasPerspective
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasPlayerNumber
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasProgression
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/hasStory
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/involvesCharacterChoice
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/isAvailable
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/withEnding
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/withInput
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Available
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Character_Choice
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Ending
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game_Mode
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Gaming_Platform
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Genre
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Information
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Input
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Player_Perspective
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Player_number
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Progression
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Story
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Pen&Paper
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Action
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Adventure
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Arcade
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Board
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Cards
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Casual
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Character-driven
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Competitive
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Complementary
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Console
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Controller
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Cooperative
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Customisation
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Default
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Dice
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Digital-Offline
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Digital-Online
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Educational
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Fighting
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/First-Person
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Hidden
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Keyboard
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Level-Based
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Linear
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Mobile
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Mouse
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Movement-Based
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Multiplayer
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Multiple
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Music
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Non-Digital
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Open
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/PC
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Perfect
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Platform
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Platformer
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Plot-driven
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Pokemon
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Portable_Console
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Racing
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Rhythm
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Role-Playing
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Saloon
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Sandbox
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Selection
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Shooter
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Simulation
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Single_Player
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Singular
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Sports
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Strategy
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Survival
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Table
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Third-Person
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Touch
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Tree
+# 
+# http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Voice-Based
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+# 
+# Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+<../ontoJogo> a owl:Ontology;
+  rdfs:comment "Had to create this ontology based on the following: https://www.studocu.com/vn/document/truong-dai-hoc-su-pham-thanh-pho-ho-chi-minh/co-so-toan-o-tieu-hoc-1/onto-jogo-an-ontology-for-game-classification-240411-221249/90893738" .
+
+:belongsToGenre a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Genre .
+
+:belongsToPlatform a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Gaming_Platform .
+
+:hasInformation a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Information .
+
+:hasMode a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Game_Mode .
+
+:hasPerspective a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Player_Perspective .
+
+:hasPlayerNumber a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Player_number .
+
+:hasProgression a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Progression .
+
+:hasStory a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Story .
+
+:involvesCharacterChoice a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Character_Choice .
+
+:isAvailable a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Available .
+
+:withEnding a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Ending .
+
+:withInput a owl:ObjectProperty;
+  rdfs:subPropertyOf owl:topObjectProperty;
+  rdfs:domain :Game;
+  rdfs:range :Input .
+
+:Available a owl:Class .
+
+:Character_Choice a owl:Class .
+
+:Ending a owl:Class .
+
+:Game a owl:Class .
+
+:Game_Mode a owl:Class .
+
+:Gaming_Platform a owl:Class .
+
+:Genre a owl:Class .
+
+:Information a owl:Class .
 
-<http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo> rdf:type owl:Ontology ;
-                                                               rdfs:comment "Had to create this ontology based on the following: https://www.studocu.com/vn/document/truong-dai-hoc-su-pham-thanh-pho-ho-chi-minh/co-so-toan-o-tieu-hoc-1/onto-jogo-an-ontology-for-game-classification-240411-221249/90893738" .
+:Input a owl:Class .
 
-#################################################################
-#    Object Properties
-#################################################################
+:Player_Perspective a owl:Class .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#belongsToGenre
-:belongsToGenre rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Game ;
-                rdfs:range :Genre .
+:Player_number a owl:Class .
 
+:Progression a owl:Class .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#belongsToPlatform
-:belongsToPlatform rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdfs:domain :Game ;
-                   rdfs:range :Gaming_Platform .
+:Story a owl:Class .
 
+<../ontoJogo#Pen&Paper> a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasInformation
-:hasInformation rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Game ;
-                rdfs:range :Information .
+:Action a owl:NamedIndividual, :Genre .
 
+:Adventure a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasMode
-:hasMode rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :Game ;
-         rdfs:range :Game_Mode .
+:Arcade a owl:NamedIndividual, :Genre .
 
+:Board a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasPerspective
-:hasPerspective rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Game ;
-                rdfs:range :Player_Perspective .
+:Cards a owl:NamedIndividual, :Genre .
 
+:Casual a owl:NamedIndividual, :Game_Mode .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasPlayerNumber
-:hasPlayerNumber rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty ;
-                 rdfs:domain :Game ;
-                 rdfs:range :Player_number .
+:Character-driven a owl:NamedIndividual, :Story .
 
+:Competitive a owl:NamedIndividual, :Game_Mode .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasProgression
-:hasProgression rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Game ;
-                rdfs:range :Progression .
+:Complementary a owl:NamedIndividual, :Story .
 
+:Console a owl:NamedIndividual, :Gaming_Platform .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#hasStory
-:hasStory rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Game ;
-          rdfs:range :Story .
+:Controller a owl:NamedIndividual, :Input .
 
+:Cooperative a owl:NamedIndividual, :Game_Mode .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#involvesCharacterChoice
-:involvesCharacterChoice rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf owl:topObjectProperty ;
-                         rdfs:domain :Game ;
-                         rdfs:range :Character_Choice .
+:Customisation a owl:NamedIndividual, :Character_Choice .
 
+:Default a owl:NamedIndividual, :Character_Choice .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#isAvailable
-:isAvailable rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :Game ;
-             rdfs:range :Available .
+:Dice a owl:NamedIndividual, :Genre .
 
+:Digital-Offline a owl:NamedIndividual, :Available .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#withEnding
-:withEnding rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Game ;
-            rdfs:range :Ending .
+:Digital-Online a owl:NamedIndividual, :Available .
 
+:Educational a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#withInput
-:withInput rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Game ;
-           rdfs:range :Input .
+:Fighting a owl:NamedIndividual, :Genre .
 
+:First-Person a owl:NamedIndividual, :Player_Perspective .
 
-#################################################################
-#    Classes
-#################################################################
+:Hidden a owl:NamedIndividual, :Information .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Available
-:Available rdf:type owl:Class .
+:Keyboard a owl:NamedIndividual, :Input .
 
+:Level-Based a owl:NamedIndividual, :Progression .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Character_Choice
-:Character_Choice rdf:type owl:Class .
+:Linear a owl:NamedIndividual, :Progression .
 
+:Mobile a owl:NamedIndividual, :Gaming_Platform .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Ending
-:Ending rdf:type owl:Class .
+:Mouse a owl:NamedIndividual, :Input .
 
+:Movement-Based a owl:NamedIndividual, :Input .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Game
-:Game rdf:type owl:Class .
+:Multiplayer a owl:NamedIndividual, :Player_number .
 
+:Multiple a owl:NamedIndividual, :Ending .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Game_Mode
-:Game_Mode rdf:type owl:Class .
+:Music a owl:NamedIndividual, :Genre .
 
+:Non-Digital a owl:NamedIndividual, :Available .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Gaming_Platform
-:Gaming_Platform rdf:type owl:Class .
+:Open a owl:NamedIndividual, :Progression .
 
+:PC a owl:NamedIndividual, :Gaming_Platform .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Genre
-:Genre rdf:type owl:Class .
+:Perfect a owl:NamedIndividual, :Information .
 
+:Platform a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Information
-:Information rdf:type owl:Class .
+:Platformer a owl:NamedIndividual .
 
+:Plot-driven a owl:NamedIndividual, :Story .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Input
-:Input rdf:type owl:Class .
+:Pokemon a owl:NamedIndividual, :Game .
 
+:Portable_Console a owl:NamedIndividual, :Gaming_Platform .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Player_Perspective
-:Player_Perspective rdf:type owl:Class .
+:Racing a owl:NamedIndividual, :Genre .
 
+:Rhythm a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Player_number
-:Player_number rdf:type owl:Class .
+:Role-Playing a owl:NamedIndividual, :Genre .
 
+:Saloon a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Progression
-:Progression rdf:type owl:Class .
+:Sandbox a owl:NamedIndividual, :Ending .
 
+:Selection a owl:NamedIndividual, :Character_Choice .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Story
-:Story rdf:type owl:Class .
+:Shooter a owl:NamedIndividual, :Genre .
 
+:Simulation a owl:NamedIndividual, :Genre .
 
-#################################################################
-#    Individuals
-#################################################################
+:Single_Player a owl:NamedIndividual, :Player_number .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Action
-:Action rdf:type owl:NamedIndividual ,
-                 :Genre .
+:Singular a owl:NamedIndividual, :Ending .
 
+:Sports a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Adventure
-:Adventure rdf:type owl:NamedIndividual ,
-                    :Genre .
+:Strategy a owl:NamedIndividual, :Genre .
 
+:Survival a owl:NamedIndividual, :Genre .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Arcade
-:Arcade rdf:type owl:NamedIndividual ,
-                 :Genre .
+:Table a owl:NamedIndividual, :Genre .
 
+:Third-Person a owl:NamedIndividual, :Player_Perspective .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Board
-:Board rdf:type owl:NamedIndividual ,
-                :Genre .
+:Touch a owl:NamedIndividual, :Input .
 
+:Tree a owl:NamedIndividual, :Progression .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Cards
-:Cards rdf:type owl:NamedIndividual ,
-                :Genre .
+:Voice-Based a owl:NamedIndividual, :Input .
 
+_:genid1 a owl:AllDisjointClasses;
+  owl:members _:genid13 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Casual
-:Casual rdf:type owl:NamedIndividual ,
-                 :Game_Mode .
+_:genid13 a rdf:List;
+  rdf:first :Available;
+  rdf:rest _:genid12 .
 
+_:genid12 a rdf:List;
+  rdf:first :Character_Choice;
+  rdf:rest _:genid11 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Character-driven
-:Character-driven rdf:type owl:NamedIndividual ,
-                           :Story .
+_:genid11 a rdf:List;
+  rdf:first :Ending;
+  rdf:rest _:genid10 .
 
+_:genid10 a rdf:List;
+  rdf:first :Game_Mode;
+  rdf:rest _:genid9 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Competitive
-:Competitive rdf:type owl:NamedIndividual ,
-                      :Game_Mode .
+_:genid9 a rdf:List;
+  rdf:first :Gaming_Platform;
+  rdf:rest _:genid8 .
 
+_:genid8 a rdf:List;
+  rdf:first :Genre;
+  rdf:rest _:genid7 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Complementary
-:Complementary rdf:type owl:NamedIndividual ,
-                        :Story .
+_:genid7 a rdf:List;
+  rdf:first :Information;
+  rdf:rest _:genid6 .
 
+_:genid6 a rdf:List;
+  rdf:first :Input;
+  rdf:rest _:genid5 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Console
-:Console rdf:type owl:NamedIndividual ,
-                  :Gaming_Platform .
+_:genid5 a rdf:List;
+  rdf:first :Player_Perspective;
+  rdf:rest _:genid4 .
 
+_:genid4 a rdf:List;
+  rdf:first :Player_number;
+  rdf:rest _:genid3 .
 
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Controller
-:Controller rdf:type owl:NamedIndividual ,
-                     :Input .
+_:genid3 a rdf:List;
+  rdf:first :Progression;
+  rdf:rest _:genid2 .
 
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Cooperative
-:Cooperative rdf:type owl:NamedIndividual ,
-                      :Game_Mode .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Customisation
-:Customisation rdf:type owl:NamedIndividual ,
-                        :Character_Choice .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Default
-:Default rdf:type owl:NamedIndividual ,
-                  :Character_Choice .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Dice
-:Dice rdf:type owl:NamedIndividual ,
-               :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Digital-Offline
-:Digital-Offline rdf:type owl:NamedIndividual ,
-                          :Available .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Digital-Online
-:Digital-Online rdf:type owl:NamedIndividual ,
-                         :Available .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Educational
-:Educational rdf:type owl:NamedIndividual ,
-                      :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Fighting
-:Fighting rdf:type owl:NamedIndividual ,
-                   :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#First-Person
-:First-Person rdf:type owl:NamedIndividual ,
-                       :Player_Perspective .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Hidden
-:Hidden rdf:type owl:NamedIndividual ,
-                 :Information .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Keyboard
-:Keyboard rdf:type owl:NamedIndividual ,
-                   :Input .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Level-Based
-:Level-Based rdf:type owl:NamedIndividual ,
-                      :Progression .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Linear
-:Linear rdf:type owl:NamedIndividual ,
-                 :Progression .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Mobile
-:Mobile rdf:type owl:NamedIndividual ,
-                 :Gaming_Platform .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Mouse
-:Mouse rdf:type owl:NamedIndividual ,
-                :Input .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Movement-Based
-:Movement-Based rdf:type owl:NamedIndividual ,
-                         :Input .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Multiplayer
-:Multiplayer rdf:type owl:NamedIndividual ,
-                      :Player_number .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Multiple
-:Multiple rdf:type owl:NamedIndividual ,
-                   :Ending .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Music
-:Music rdf:type owl:NamedIndividual ,
-                :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Non-Digital
-:Non-Digital rdf:type owl:NamedIndividual ,
-                      :Available .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Open
-:Open rdf:type owl:NamedIndividual ,
-               :Progression .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#PC
-:PC rdf:type owl:NamedIndividual ,
-             :Gaming_Platform .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Perfect
-:Perfect rdf:type owl:NamedIndividual ,
-                  :Information .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Platform
-:Platform rdf:type owl:NamedIndividual ,
-                   :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Platformer
-:Platformer rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Plot-driven
-:Plot-driven rdf:type owl:NamedIndividual ,
-                      :Story .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Pokemon
-:Pokemon rdf:type owl:NamedIndividual ,
-                  :Game .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Portable_Console
-:Portable_Console rdf:type owl:NamedIndividual ,
-                           :Gaming_Platform .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Racing
-:Racing rdf:type owl:NamedIndividual ,
-                 :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Rhythm
-:Rhythm rdf:type owl:NamedIndividual ,
-                 :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Role-Playing
-:Role-Playing rdf:type owl:NamedIndividual ,
-                       :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Saloon
-:Saloon rdf:type owl:NamedIndividual ,
-                 :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Sandbox
-:Sandbox rdf:type owl:NamedIndividual ,
-                  :Ending .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Selection
-:Selection rdf:type owl:NamedIndividual ,
-                    :Character_Choice .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Shooter
-:Shooter rdf:type owl:NamedIndividual ,
-                  :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Simulation
-:Simulation rdf:type owl:NamedIndividual ,
-                     :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Single_Player
-:Single_Player rdf:type owl:NamedIndividual ,
-                        :Player_number .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Singular
-:Singular rdf:type owl:NamedIndividual ,
-                   :Ending .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Sports
-:Sports rdf:type owl:NamedIndividual ,
-                 :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Strategy
-:Strategy rdf:type owl:NamedIndividual ,
-                   :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Survival
-:Survival rdf:type owl:NamedIndividual ,
-                   :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Table
-:Table rdf:type owl:NamedIndividual ,
-                :Genre .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Third-Person
-:Third-Person rdf:type owl:NamedIndividual ,
-                       :Player_Perspective .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Touch
-:Touch rdf:type owl:NamedIndividual ,
-                :Input .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Tree
-:Tree rdf:type owl:NamedIndividual ,
-               :Progression .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Voice-Based
-:Voice-Based rdf:type owl:NamedIndividual ,
-                      :Input .
-
-
-###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Pen&Paper
-<http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo#Pen&Paper> rdf:type owl:NamedIndividual ,
-                                                                                 :Genre .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Available
-                :Character_Choice
-                :Ending
-                :Game_Mode
-                :Gaming_Platform
-                :Genre
-                :Information
-                :Input
-                :Player_Perspective
-                :Player_number
-                :Progression
-                :Story
-              )
-] .
-
-
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+_:genid2 a rdf:List;
+  rdf:first :Story;
+  rdf:rest rdf:nil .
