@@ -1,1273 +1,4419 @@
 @prefix fdo: <http://fandom.com/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-fdo:Action a rdfs:Class .
+fdo:2DOpenWorldCraftingExplorationFarming rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Concept a rdfs:Class .
+fdo:4XTurnBasedStrategy rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:AIControlUnit rdfs:subClassOf fdo:Real .
+fdo:AI rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AbilityItem rdfs:subClassOf fdo:Ability .
+fdo:AIControlUnit rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:AbilityModifier rdfs:subClassOf fdo:Ability .
+fdo:AIEntity rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:AbilityType rdfs:subClassOf fdo:Ability .
+fdo:AWE rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AccountManagement rdfs:subClassOf fdo:Hero .
+fdo:Ability rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AchievementSystem rdfs:subClassOf fdo:Hero .
+fdo:AbilityEnhancement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Administrator rdfs:subClassOf fdo:Secret .
+fdo:AbilityItem rdfs:subClassOf fdo:AbilityHighLevel .
 
-fdo:AdvancedMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:AbilityModifier rdfs:subClassOf fdo:AbilityHighLevel .
 
-fdo:Altar rdfs:subClassOf fdo:Real .
+fdo:AbilityPoints rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AmmunitionReserve rdfs:subClassOf fdo:Real .
+fdo:AbilityType rdfs:subClassOf fdo:AbilityHighLevel .
 
-fdo:Android rdfs:subClassOf fdo:EquipableItem .
+fdo:Abstract rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:AnimatedEpisode rdfs:subClassOf fdo:Holiday .
+fdo:AccessCard rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Animus rdfs:subClassOf fdo:EquipableItem .
+fdo:Accessory rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:AnnouncerPack rdfs:subClassOf fdo:Holiday .
+fdo:AccountManagement rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Apartment rdfs:subClassOf fdo:Real .
+fdo:Achievement rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:ApartmentBuilding rdfs:subClassOf fdo:Real .
+fdo:AchievementGuideline rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Apartments rdfs:subClassOf fdo:Real .
+fdo:AchievementSystem rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Architect rdfs:subClassOf fdo:EquipableItem .
+fdo:Act rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Archive rdfs:subClassOf fdo:Secret .
+fdo:Action rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Area rdfs:subClassOf fdo:Real .
+fdo:ActionAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Arena rdfs:subClassOf fdo:Real .
+fdo:ActionAdventure rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Armor rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionAdventureGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ArmyDivision rdfs:subClassOf fdo:Hero .
+fdo:ActionAdventurePlatformer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ArmyGroup rdfs:subClassOf fdo:Secret .
+fdo:ActionAdventureRPG rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ArmyUnit rdfs:subClassOf fdo:Hero .
+fdo:ActionAdventureRolePlaying rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Artifact rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionCard rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AssetPack rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AssignmentItem rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionPlatformer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AudioBroadcast rdfs:subClassOf fdo:Holiday .
+fdo:ActionRPG rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AudioItem rdfs:subClassOf fdo:Holiday .
+fdo:ActionRoguelike rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AudioShow rdfs:subClassOf fdo:Holiday .
+fdo:ActionSciFi rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:AugmentingItem rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionShooter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BackgroundMusic rdfs:subClassOf fdo:EquipableItem .
+fdo:ActionSkill rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BarnyardAnimal rdfs:subClassOf fdo:Real .
+fdo:ActivatedCollectible rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Base rdfs:subClassOf fdo:Real .
+fdo:ActiveAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BaseDefense rdfs:subClassOf fdo:Real .
+fdo:ActiveItem rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Basic rdfs:subClassOf fdo:EquipableItem .
+fdo:ActiveSkill rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BasicAbility rdfs:subClassOf fdo:Ability .
+fdo:ActiveStructure rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BasicLessons rdfs:subClassOf fdo:EquipableItem .
+fdo:ActivistGroup rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Bay rdfs:subClassOf fdo:Real .
+fdo:Activities rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Bayou rdfs:subClassOf fdo:Real .
+fdo:Actor rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Beacon rdfs:subClassOf fdo:Real .
+fdo:AdditiveMultiplier rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Beast rdfs:subClassOf fdo:EquipableItem .
+fdo:Adept rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Bed rdfs:subClassOf fdo:Real .
+fdo:Administrator rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:BinaryPlanet rdfs:subClassOf fdo:Fictional .
+fdo:AdoptionEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Block rdfs:subClassOf fdo:Real .
+fdo:AdvancedMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:BloodYouth rdfs:subClassOf fdo:Race .
+fdo:AdvancedQuest rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:BondMission rdfs:subClassOf fdo:EquipableItem .
+fdo:AdvancedTechnology rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:BooleanOperator rdfs:subClassOf fdo:Evil .
+fdo:AdvancedTutorials rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Boss rdfs:subClassOf fdo:Evil .
+fdo:Adventure rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BossCharacter rdfs:subClassOf fdo:Evil .
+fdo:AdventureActionRPG rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BossLevel rdfs:subClassOf fdo:Evil .
+fdo:AdventureGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Bot rdfs:subClassOf fdo:EquipableItem .
+fdo:AdventureModule rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BronzeCharacter rdfs:subClassOf fdo:EquipableItem .
+fdo:AdventurePlatformer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BronzeTrophy rdfs:subClassOf fdo:EquipableItem .
+fdo:AdventureQuest rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Buff rdfs:subClassOf fdo:Race .
+fdo:AdventureRPG rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Building rdfs:subClassOf fdo:EquipableItem .
+fdo:AdventureRPGHorrorGame rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:BuildingMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:AdventureRolePlaying rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BuildingService rdfs:subClassOf fdo:Hero .
+fdo:AdventureRomance rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BuildingStructure rdfs:subClassOf fdo:EquipableItem .
+fdo:Adventurer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BuildingTechnology rdfs:subClassOf fdo:EquipableItem .
+fdo:Advert rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Bundle rdfs:subClassOf fdo:Hero .
+fdo:Advisor rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Bunker rdfs:subClassOf fdo:Real .
+fdo:Agent rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:BurritoStand rdfs:subClassOf fdo:Real .
+fdo:AgentNamecard rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Business rdfs:subClassOf fdo:Secret .
+fdo:AggressiveEnemy rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:BusinessEntity rdfs:subClassOf fdo:Hero .
+fdo:Air rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CEO rdfs:subClassOf fdo:Hero .
+fdo:AirborneDivision rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Cabin rdfs:subClassOf fdo:Real .
+fdo:Aircraft rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Cafe rdfs:subClassOf fdo:Real .
+fdo:Airship rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Camp rdfs:subClassOf fdo:Real .
+fdo:Album rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CampaignMission rdfs:subClassOf fdo:Hero .
+fdo:AlbumTrack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Campfire rdfs:subClassOf fdo:Real .
+fdo:Alchemist rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:CanyonTown rdfs:subClassOf fdo:Real .
+fdo:Alien rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Car rdfs:subClassOf fdo:EquipableItem .
+fdo:AlienAutopsy rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CardGame rdfs:subClassOf fdo:EquipableItem .
+fdo:AlienFaction rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Cargo rdfs:subClassOf fdo:EquipableItem .
+fdo:AlienGiantSandWorm rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Cave rdfs:subClassOf fdo:Real .
+fdo:AlienRace rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Cavern rdfs:subClassOf fdo:Real .
+fdo:AlienRelic rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Celebration rdfs:subClassOf fdo:Holiday .
+fdo:AlienTurrets rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Champion rdfs:subClassOf fdo:Race .
+fdo:Ally rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:ChemicalElement rdfs:subClassOf fdo:EquipableItem .
+fdo:AlphaXenos rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Church rdfs:subClassOf fdo:Real .
+fdo:Altar rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:City rdfs:subClassOf fdo:Real .
+fdo:AlteredItem rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CityBuilder rdfs:subClassOf fdo:Real .
+fdo:AlternateDimension rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CityPack rdfs:subClassOf fdo:Real .
+fdo:Amenity rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:CityQuest rdfs:subClassOf fdo:Real .
+fdo:Ammo rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CivicDoctrine rdfs:subClassOf fdo:Hero .
+fdo:AmmoPickup rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Cleaner rdfs:subClassOf fdo:Hero .
+fdo:Ammunition rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CloseInWeaponSystem rdfs:subClassOf fdo:Secret .
+fdo:AmmunitionReserve rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Clothing rdfs:subClassOf fdo:EquipableItem .
+fdo:AmmunitionType rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Club rdfs:subClassOf fdo:Hero .
+fdo:Amulet rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ClubManager rdfs:subClassOf fdo:Secret .
+fdo:Analysis rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CoFounder rdfs:subClassOf fdo:Hero .
+fdo:AnalysisItem rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CoOpMissionAchievement rdfs:subClassOf fdo:Hero .
+fdo:AncientTechnique rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Coach rdfs:subClassOf fdo:Secret .
+fdo:Android rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:CoalitionGovernment rdfs:subClassOf fdo:Hero .
+fdo:Angel rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:CodexEntry rdfs:subClassOf fdo:Secret .
+fdo:Animal rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Collectable rdfs:subClassOf fdo:Hero .
+fdo:AnimalCompanion rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Collectible rdfs:subClassOf fdo:EquipableItem .
+fdo:AnimalEnclosure rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:ColonizationTechnology rdfs:subClassOf fdo:Real .
+fdo:AnimalProduct rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Commission rdfs:subClassOf fdo:Hero .
+fdo:AnimatedEpisode rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:CommonArea rdfs:subClassOf fdo:Real .
+fdo:Animator rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Company rdfs:subClassOf fdo:Hero .
+fdo:Animatronic rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CompanyBoss rdfs:subClassOf fdo:Hero .
+fdo:Anime rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Compendium rdfs:subClassOf fdo:Hero .
+fdo:Animus rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:CompetitiveMode rdfs:subClassOf fdo:Hero .
+fdo:Anniversary rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CompetitiveTeam rdfs:subClassOf fdo:Hero .
+fdo:AnnouncerPack rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:Conglomerate rdfs:subClassOf fdo:Hero .
+fdo:AnomalousEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Console rdfs:subClassOf fdo:EquipableItem .
+fdo:Antagonist rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Construction rdfs:subClassOf fdo:EquipableItem .
+fdo:AntiHero rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ConstructionMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:AnyClasses rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ConstructionPlatform rdfs:subClassOf fdo:Real .
+fdo:Apartment rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:ContentAddon rdfs:subClassOf fdo:EquipableItem .
+fdo:ApartmentBuilding rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:CooldownSystem rdfs:subClassOf fdo:Hero .
+fdo:Apartments rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Core rdfs:subClassOf fdo:Hero .
+fdo:App rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CoreUpgrade rdfs:subClassOf fdo:EquipableItem .
+fdo:Aquatic rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Coromon rdfs:subClassOf fdo:Evil .
+fdo:AquaticAnimal rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Corporation rdfs:subClassOf fdo:Secret .
+fdo:ArcadeActionGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CouncilBuilding rdfs:subClassOf fdo:Secret .
+fdo:ArcadeChallenge rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CouncilLeader rdfs:subClassOf fdo:Hero .
+fdo:Arcana rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CouncilMember rdfs:subClassOf fdo:Secret .
+fdo:ArcaneItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Country rdfs:subClassOf fdo:Real .
+fdo:Archaeology rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CovertOperation rdfs:subClassOf fdo:Secret .
+fdo:ArchaeologyEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:CraftingEquipment rdfs:subClassOf fdo:EquipableItem .
+fdo:ArchaeologyQuest rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CraftingItem rdfs:subClassOf fdo:EquipableItem .
+fdo:Archer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CraftingMachine rdfs:subClassOf fdo:EquipableItem .
+fdo:Architect rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:CraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:Archive rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:CraftingStation rdfs:subClassOf fdo:Real .
+fdo:ArchiveData rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CraftingStationEnhancement rdfs:subClassOf fdo:Real .
+fdo:Area rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Crater rdfs:subClassOf fdo:Real .
+fdo:Arena rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Crew rdfs:subClassOf fdo:Hero .
+fdo:Arm rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:CrewMember rdfs:subClassOf fdo:Hero .
+fdo:ArmAugmentation rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CrewResidence rdfs:subClassOf fdo:Real .
+fdo:ArmedAirship rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:CustomRoshan rdfs:subClassOf fdo:Real .
+fdo:Armor rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:DLC rdfs:subClassOf fdo:Real .
+fdo:ArmoredDivision rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DLCCharacter rdfs:subClassOf fdo:Real .
+fdo:ArmoredTransport rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DLCPack rdfs:subClassOf fdo:Real .
+fdo:ArmoredUnit rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DLCPrison rdfs:subClassOf fdo:Real .
+fdo:ArmoredVehicle rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DLCQuest rdfs:subClassOf fdo:Real .
+fdo:Army rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DamageInflictingTool rdfs:subClassOf fdo:EquipableItem .
+fdo:ArmyDivision rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:DataDrive rdfs:subClassOf fdo:EquipableItem .
+fdo:ArmyGroup rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:DataHub rdfs:subClassOf fdo:Real .
+fdo:ArmyUnit rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:DataPoint rdfs:subClassOf fdo:Real .
+fdo:Art rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DayQuest rdfs:subClassOf fdo:Real .
+fdo:ArtStudent rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DeathWishMission rdfs:subClassOf fdo:EquipableItem .
+fdo:Artifact rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Decade rdfs:subClassOf fdo:EquipableItem .
+fdo:ArtificialIntelligence rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Deck rdfs:subClassOf fdo:Secret .
+fdo:Artillery rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Deckbuilder rdfs:subClassOf fdo:Hero .
+fdo:ArtisanItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DefenseStructure rdfs:subClassOf fdo:Secret .
+fdo:ArtisanProduct rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DefenseTechnology rdfs:subClassOf fdo:EquipableItem .
+fdo:Artist rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:DefensiveStructure rdfs:subClassOf fdo:Secret .
+fdo:Artwork rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Department rdfs:subClassOf fdo:Secret .
+fdo:Ascension rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Device rdfs:subClassOf fdo:EquipableItem .
+fdo:Assassin rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Diagnosis rdfs:subClassOf fdo:EquipableItem .
+fdo:Assassination rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Dinosaur rdfs:subClassOf fdo:EquipableItem .
+fdo:Assault rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Director rdfs:subClassOf fdo:Hero .
+fdo:AssaultCarrier rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Dish rdfs:subClassOf fdo:EquipableItem .
+fdo:AssaultRifle rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Disk rdfs:subClassOf fdo:EquipableItem .
+fdo:AssetPack rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:District rdfs:subClassOf fdo:Real .
+fdo:AssignmentItem rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Doctrine rdfs:subClassOf fdo:Secret .
+fdo:AssistCharacter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Document rdfs:subClassOf fdo:EquipableItem .
+fdo:AsterismPilot rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DojoMission rdfs:subClassOf fdo:Secret .
+fdo:Attack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Dome rdfs:subClassOf fdo:Real .
+fdo:AttackAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DomeService rdfs:subClassOf fdo:Real .
+fdo:AttackBomber rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DomeServices rdfs:subClassOf fdo:Real .
+fdo:AttackCard rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DoomEngineMod rdfs:subClassOf fdo:EquipableItem .
+fdo:AttackItem rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DormApartment rdfs:subClassOf fdo:Real .
+fdo:AttackModifier rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DownloadableContent rdfs:subClassOf fdo:EquipableItem .
+fdo:AttackMove rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Drug rdfs:subClassOf fdo:EquipableItem .
+fdo:AttackMovement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Dungeon rdfs:subClassOf fdo:Fictional .
+fdo:AttackSkill rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:DungeonArea rdfs:subClassOf fdo:Real .
+fdo:AttackType rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Dye rdfs:subClassOf fdo:EquipableItem .
+fdo:AttackUpgrade rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:EcologistFaction rdfs:subClassOf fdo:Secret .
+fdo:AttackVehicle rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:EconomicStructure rdfs:subClassOf fdo:Hero .
+fdo:AttackerAircraft rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Effect rdfs:subClassOf fdo:Holiday .
+fdo:Attraction rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:EffectModifier rdfs:subClassOf fdo:Holiday .
+fdo:Audio rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ElementalAbility rdfs:subClassOf fdo:Ability .
+fdo:AudioBroadcast rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:ElementalBoss rdfs:subClassOf fdo:Evil .
+fdo:AudioDatapoint rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Emote rdfs:subClassOf fdo:Holiday .
+fdo:AudioItem rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:Ending rdfs:subClassOf fdo:Holiday .
+fdo:AudioShow rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:EnergyWeapon rdfs:subClassOf fdo:EquipableItem .
+fdo:AudioTrack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Environment rdfs:subClassOf fdo:Real .
+fdo:Augment rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:EnvironmentCommand rdfs:subClassOf fdo:Real .
+fdo:AugmentingItem rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Equipment rdfs:subClassOf fdo:EquipableItem .
+fdo:AutoParts rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:EscapeTeamDLCItem rdfs:subClassOf fdo:Real .
+fdo:AutomobileManufacturer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:EventVenue rdfs:subClassOf fdo:Real .
+fdo:AutonomousUnit rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Evidence rdfs:subClassOf fdo:EquipableItem .
+fdo:Autopsy rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Executive rdfs:subClassOf fdo:Hero .
+fdo:AutopsyProject rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ExiledDragoon rdfs:subClassOf fdo:Real .
+fdo:AutopsyReport rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ExplorationQuest rdfs:subClassOf fdo:Real .
+fdo:BackAccessory rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Exterior rdfs:subClassOf fdo:Real .
+fdo:BackgroundCharacter rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Extractor rdfs:subClassOf fdo:EquipableItem .
+fdo:BackgroundMusic rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Facility rdfs:subClassOf fdo:Hero .
+fdo:Backpack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FacilityModification rdfs:subClassOf fdo:Hero .
+fdo:Banisher rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Faction rdfs:subClassOf fdo:Secret .
+fdo:Banner rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Factory rdfs:subClassOf fdo:Hero .
+fdo:BarnyardAnimal rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Familiar rdfs:subClassOf fdo:EquipableItem .
+fdo:Base rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Farm rdfs:subClassOf fdo:Real .
+fdo:BaseDefense rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:FarsideAnalysis rdfs:subClassOf fdo:Fictional .
+fdo:BaseSkill rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Fauna rdfs:subClassOf fdo:EquipableItem .
+fdo:Basic rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Feat rdfs:subClassOf fdo:EquipableItem .
+fdo:BasicAbility rdfs:subClassOf fdo:AbilityHighLevel .
 
-fdo:FictionalCorporation rdfs:subClassOf fdo:Secret .
+fdo:BasicEnemy rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:FieldTile rdfs:subClassOf fdo:Real .
+fdo:BasicLessons rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:FieldTool rdfs:subClassOf fdo:EquipableItem .
+fdo:Battery rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FinalBoss rdfs:subClassOf fdo:Evil .
+fdo:Battle rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Flooring rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FlooringWalls rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleArenaShooter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Food rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleMech rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ForcesOfNature rdfs:subClassOf fdo:EquipableItem .
+fdo:BattlePet rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ForegroundSpray rdfs:subClassOf fdo:Real .
+fdo:BattleQuest rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FragilePosition rdfs:subClassOf fdo:Fictional .
+fdo:BattleRoyale rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Furniture rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleRoyaleGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FurnitureItem rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleSkill rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:FurnitureWallDecoration rdfs:subClassOf fdo:EquipableItem .
+fdo:BattleTheme rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Gadget rdfs:subClassOf fdo:EquipableItem .
+fdo:Battleship rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:GameAbility rdfs:subClassOf fdo:Ability .
+fdo:Battlestar rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:GameConsole rdfs:subClassOf fdo:EquipableItem .
+fdo:Bay rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:GameLocation rdfs:subClassOf fdo:Real .
+fdo:Bayou rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:GameObjective rdfs:subClassOf fdo:Ability .
+fdo:Beacon rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Garage rdfs:subClassOf fdo:Real .
+fdo:Beast rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Garden rdfs:subClassOf fdo:Real .
+fdo:Bed rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Gear rdfs:subClassOf fdo:Hero .
+fdo:BeginnerMission rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Gemstone rdfs:subClassOf fdo:EquipableItem .
+fdo:Behavior rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:GeographicalArea rdfs:subClassOf fdo:Real .
+fdo:BehemothBreakpart rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Gloves rdfs:subClassOf fdo:EquipableItem .
+fdo:BellBearing rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:GoldTrophy rdfs:subClassOf fdo:EquipableItem .
+fdo:Belt rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:GoverningBody rdfs:subClassOf fdo:Hero .
+fdo:BenedictClassSkyBattleship rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Grindstone rdfs:subClassOf fdo:Real .
+fdo:Bestral rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Ground rdfs:subClassOf fdo:Real .
+fdo:BetaVersion rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:GroundTypePokemon rdfs:subClassOf fdo:Real .
+fdo:Bicycle rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Group rdfs:subClassOf fdo:Secret .
+fdo:BinaryPlanet rdfs:subClassOf fdo:FictionalHighLevel .
 
-fdo:Guide rdfs:subClassOf fdo:Real .
+fdo:BioAndroid rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Gym rdfs:subClassOf fdo:EquipableItem .
+fdo:Biome rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:HandheldConsole rdfs:subClassOf fdo:EquipableItem .
+fdo:Biped rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HandheldGameConsole rdfs:subClassOf fdo:EquipableItem .
+fdo:BlackMagus rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Harbour rdfs:subClassOf fdo:Real .
+fdo:Blade rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Hardware rdfs:subClassOf fdo:EquipableItem .
+fdo:Block rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Hat rdfs:subClassOf fdo:EquipableItem .
+fdo:Blocker rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Hazard rdfs:subClassOf fdo:Real .
+fdo:BloodMaiden rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HeavyDefense rdfs:subClassOf fdo:EquipableItem .
+fdo:BloodYouth rdfs:subClassOf fdo:RaceHighLevel .
 
-fdo:HeavyWeapon rdfs:subClassOf fdo:EquipableItem .
+fdo:Blueprint rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:HeldItem rdfs:subClassOf fdo:EquipableItem .
+fdo:BoardGame rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Hex rdfs:subClassOf fdo:Fictional .
+fdo:Boat rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HexArea rdfs:subClassOf fdo:Real .
+fdo:BoatRide rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HiddenBase rdfs:subClassOf fdo:Fictional .
+fdo:BodyAugmentation rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HiddenLevel rdfs:subClassOf fdo:Fictional .
+fdo:Bomb rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HiddenQuest rdfs:subClassOf fdo:Fictional .
+fdo:Bomber rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HiddenRealm rdfs:subClassOf fdo:Fictional .
+fdo:Bond rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:HiddenTrophy rdfs:subClassOf fdo:Fictional .
+fdo:BondEpisode rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Hideout rdfs:subClassOf fdo:Real .
+fdo:BondMission rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:HidingPlace rdfs:subClassOf fdo:Fictional .
+fdo:BonusResource rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:HolographicQuest rdfs:subClassOf fdo:EquipableItem .
+fdo:Book rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:HomeType rdfs:subClassOf fdo:Real .
+fdo:BooleanOperator rdfs:subClassOf fdo:EvilHighLevel .
 
-fdo:House rdfs:subClassOf fdo:Real .
+fdo:Boost rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Houseware rdfs:subClassOf fdo:EquipableItem .
+fdo:BoostUpgrade rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Housing rdfs:subClassOf fdo:Real .
+fdo:Booster rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:HumanMandragora rdfs:subClassOf fdo:Race .
+fdo:Boss rdfs:subClassOf fdo:EvilHighLevel .
 
-fdo:HumanMutant rdfs:subClassOf fdo:Race .
+fdo:BossBattle rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Humanoid rdfs:subClassOf fdo:Race .
+fdo:BossCharacter rdfs:subClassOf fdo:EvilHighLevel .
 
-fdo:ImmobileRangedTroop rdfs:subClassOf fdo:Real .
+fdo:BossCreature rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:IndoorArea rdfs:subClassOf fdo:Real .
+fdo:BossDefeat rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:IndustrialArea rdfs:subClassOf fdo:Real .
+fdo:BossEncounter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Infrastructure rdfs:subClassOf fdo:EquipableItem .
+fdo:BossEnemy rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:IngredientProvider rdfs:subClassOf fdo:EquipableItem .
+fdo:BossEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Injectable rdfs:subClassOf fdo:EquipableItem .
+fdo:BossFight rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Insect rdfs:subClassOf fdo:EquipableItem .
+fdo:BossLevel rdfs:subClassOf fdo:EvilHighLevel .
 
-fdo:Inserter rdfs:subClassOf fdo:Real .
+fdo:BossSummon rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Installment rdfs:subClassOf fdo:EquipableItem .
+fdo:Bot rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Instrument rdfs:subClassOf fdo:EquipableItem .
+fdo:Bounty rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:InteractiveArea rdfs:subClassOf fdo:Real .
+fdo:BountyHunter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:InteractiveObject rdfs:subClassOf fdo:EquipableItem .
+fdo:BountyQuest rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:IntergovernmentalMilitaryAlliance rdfs:subClassOf fdo:Hero .
+fdo:Bow rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:IntermediateItem rdfs:subClassOf fdo:EquipableItem .
+fdo:Boxer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:InventoryItem rdfs:subClassOf fdo:Hero .
+fdo:Brawler rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Island rdfs:subClassOf fdo:Real .
+fdo:BreachBot rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Item rdfs:subClassOf fdo:Holiday .
+fdo:BreachingTool rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Jewellery rdfs:subClassOf fdo:EquipableItem .
+fdo:BreakableItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:KeyQuest rdfs:subClassOf fdo:Real .
+fdo:Bridge rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Knight rdfs:subClassOf fdo:Race .
+fdo:Broadcast rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Lamp rdfs:subClassOf fdo:Real .
+fdo:BronzeAchievement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Landmark rdfs:subClassOf fdo:Real .
+fdo:BronzeCharacter rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Landmine rdfs:subClassOf fdo:Real .
+fdo:BronzeTrophy rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Landscape rdfs:subClassOf fdo:Real .
+fdo:BruteWyvern rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Language rdfs:subClassOf fdo:EquipableItem .
+fdo:Buff rdfs:subClassOf fdo:RaceHighLevel .
 
-fdo:Leader rdfs:subClassOf fdo:Hero .
+fdo:BuffSpecial rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Leadership rdfs:subClassOf fdo:Hero .
+fdo:BuffSpell rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Level rdfs:subClassOf fdo:Real .
+fdo:Bug rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:LevelMission rdfs:subClassOf fdo:Real .
+fdo:Build rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Lighthouse rdfs:subClassOf fdo:Real .
+fdo:BuildBattleStructure rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:LimitedTimeEvent rdfs:subClassOf fdo:Holiday .
+fdo:Buildable rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:LivingQuarters rdfs:subClassOf fdo:Real .
+fdo:Builder rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Locomotive rdfs:subClassOf fdo:Real .
+fdo:Building rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:LongBlock rdfs:subClassOf fdo:Real .
+fdo:BuildingComponent rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Lore rdfs:subClassOf fdo:Real .
+fdo:BuildingGame rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:LoreDocument rdfs:subClassOf fdo:Real .
+fdo:BuildingImprovement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:LoreEvent rdfs:subClassOf fdo:Holiday .
+fdo:BuildingMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:LoreItem rdfs:subClassOf fdo:Real .
+fdo:BuildingService rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Machine rdfs:subClassOf fdo:EquipableItem .
+fdo:BuildingStructure rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:MagicAbility rdfs:subClassOf fdo:Ability .
+fdo:BuildingTechnology rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:MagicalRealm rdfs:subClassOf fdo:Real .
+fdo:Bundle rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Main rdfs:subClassOf fdo:Real .
+fdo:Bunker rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:MainHub rdfs:subClassOf fdo:Real .
+fdo:BurritoStand rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Mainframe rdfs:subClassOf fdo:EquipableItem .
+fdo:Business rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:MainframeBranch rdfs:subClassOf fdo:Real .
+fdo:BusinessEntity rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:MaintenanceRequest rdfs:subClassOf fdo:EquipableItem .
+fdo:CEO rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:MaleCharacter rdfs:subClassOf fdo:Race .
+fdo:Cabin rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:ManagementSim rdfs:subClassOf fdo:Secret .
+fdo:Cafe rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:ManagementTacticalCombat rdfs:subClassOf fdo:Hero .
+fdo:CallsignBanner rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Map rdfs:subClassOf fdo:Real .
+fdo:CallsignPatch rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MasterRelayer rdfs:subClassOf fdo:Real .
+fdo:Camp rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Material rdfs:subClassOf fdo:EquipableItem .
+fdo:CampaignAchievement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Maze rdfs:subClassOf fdo:Real .
+fdo:CampaignMission rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Mech rdfs:subClassOf fdo:Hero .
+fdo:CampaignToken rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Mecha rdfs:subClassOf fdo:Hero .
+fdo:CampaignTrophy rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Mechanical rdfs:subClassOf fdo:EquipableItem .
+fdo:Campfire rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:MechanicalDevice rdfs:subClassOf fdo:EquipableItem .
+fdo:CanyonTown rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:MechanicalItem rdfs:subClassOf fdo:EquipableItem .
+fdo:CapitalShip rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Mechanism rdfs:subClassOf fdo:Hero .
+fdo:CapsuleMachine rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MedicalEquipment rdfs:subClassOf fdo:EquipableItem .
+fdo:Captain rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MediumBoss rdfs:subClassOf fdo:Hero .
+fdo:Car rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Memento rdfs:subClassOf fdo:EquipableItem .
+fdo:CarManufacturer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Memory rdfs:subClassOf fdo:EquipableItem .
+fdo:CarPack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MentionedOnlyLocation rdfs:subClassOf fdo:Real .
+fdo:Card rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Mercenary rdfs:subClassOf fdo:Race .
+fdo:CardAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MercenaryCompany rdfs:subClassOf fdo:Hero .
+fdo:CardEffect rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Metal rdfs:subClassOf fdo:EquipableItem .
+fdo:CardGame rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:MetroArea rdfs:subClassOf fdo:Real .
+fdo:Cargo rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:MilitaryArea rdfs:subClassOf fdo:Real .
+fdo:CargoAirship rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MilitaryBuilding rdfs:subClassOf fdo:Real .
+fdo:CargoEnhancer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MilitaryDivision rdfs:subClassOf fdo:Secret .
+fdo:CargoExtender rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MilitaryFormation rdfs:subClassOf fdo:Secret .
+fdo:CargoPod rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MilitaryGroup rdfs:subClassOf fdo:Secret .
+fdo:CargoUpgrade rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MilitaryOperation rdfs:subClassOf fdo:Secret .
+fdo:Carrier rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MilitaryOrganization rdfs:subClassOf fdo:Secret .
+fdo:Carving rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MilitaryStructure rdfs:subClassOf fdo:Secret .
+fdo:Case rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:MilitaryTrainingGroup rdfs:subClassOf fdo:Hero .
+fdo:Cassette rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MilitaryUnit rdfs:subClassOf fdo:Hero .
+fdo:Caster rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Mimic rdfs:subClassOf fdo:EquipableItem .
+fdo:CatchableCreature rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Miner rdfs:subClassOf fdo:EquipableItem .
+fdo:Category rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MiningTechnology rdfs:subClassOf fdo:EquipableItem .
+fdo:Cave rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:MissionArea rdfs:subClassOf fdo:Real .
+fdo:CaveBiome rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Mob rdfs:subClassOf fdo:Hero .
+fdo:Cavern rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:MobileCastle rdfs:subClassOf fdo:Real .
+fdo:Celebration rdfs:subClassOf fdo:HolidayHighLevel .
 
-fdo:Mode rdfs:subClassOf fdo:Hero .
+fdo:Centipede rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Module rdfs:subClassOf fdo:Hero .
+fdo:Cepter rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Mook rdfs:subClassOf fdo:Fictional .
+fdo:Chainsaw rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Mount rdfs:subClassOf fdo:Real .
+fdo:Chalice rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MovementOperator rdfs:subClassOf fdo:Hero .
+fdo:Challenge rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Movie rdfs:subClassOf fdo:Holiday .
+fdo:ChallengeAchievement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Munition rdfs:subClassOf fdo:EquipableItem .
+fdo:ChallengeMission rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:MunitionsUnit rdfs:subClassOf fdo:Hero .
+fdo:ChallengeMode rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Music rdfs:subClassOf fdo:Holiday .
+fdo:Champion rdfs:subClassOf fdo:RaceHighLevel .
 
-fdo:MusicCollection rdfs:subClassOf fdo:EquipableItem .
+fdo:ChanterInvocation rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:MusicItem rdfs:subClassOf fdo:Holiday .
+fdo:ChaosMode rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Mutant rdfs:subClassOf fdo:Race .
+fdo:Chapter rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:NPC rdfs:subClassOf fdo:Hero .
+fdo:ChapterEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Narrative rdfs:subClassOf fdo:Holiday .
+fdo:Character rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:NaturalResource rdfs:subClassOf fdo:Real .
+fdo:CharacterAbility rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:NatureClubItem rdfs:subClassOf fdo:EquipableItem .
+fdo:CharacterArtist rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Neighborhood rdfs:subClassOf fdo:Real .
+fdo:CharacterClass rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:NetworkNode rdfs:subClassOf fdo:Real .
+fdo:CharacterDLC rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:NightSprings rdfs:subClassOf fdo:Real .
+fdo:CharacterEnhancement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Nightclub rdfs:subClassOf fdo:Real .
+fdo:CharacterRole rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:NobleGas rdfs:subClassOf fdo:EquipableItem .
+fdo:CharacterScreen rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:NobleHouse rdfs:subClassOf fdo:Real .
+fdo:CharacterTrait rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Node rdfs:subClassOf fdo:Real .
+fdo:ChemicalElement rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:NormalAbility rdfs:subClassOf fdo:Ability .
+fdo:Chest rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:NoticeBoardQuest rdfs:subClassOf fdo:Secret .
+fdo:Chip rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Nursery rdfs:subClassOf fdo:Real .
+fdo:Chips rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Oasis rdfs:subClassOf fdo:Real .
+fdo:ChoiceBasedAdventure rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Office rdfs:subClassOf fdo:Secret .
+fdo:ChthonicGoddess rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:OnlineArea rdfs:subClassOf fdo:Real .
+fdo:Chunk rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Operation rdfs:subClassOf fdo:Secret .
+fdo:Church rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Operator rdfs:subClassOf fdo:Hero .
+fdo:CinematicTrailer rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Order rdfs:subClassOf fdo:Hero .
+fdo:City rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Organic rdfs:subClassOf fdo:Hero .
+fdo:CityBuilder rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Origin rdfs:subClassOf fdo:Real .
+fdo:CityImprovement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:OriginalSoundtrack rdfs:subClassOf fdo:Holiday .
+fdo:CityPack rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Outfit rdfs:subClassOf fdo:Hero .
+fdo:CityQuest rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:OverworldArea rdfs:subClassOf fdo:Real .
+fdo:CivicDoctrine rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:OzKit rdfs:subClassOf fdo:Hero .
+fdo:CivilianCar rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Pack rdfs:subClassOf fdo:Secret .
+fdo:Civilization rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Painting rdfs:subClassOf fdo:EquipableItem .
+fdo:Class rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:PartyTrinket rdfs:subClassOf fdo:Holiday .
+fdo:ClassBasedCharacter rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Passenger rdfs:subClassOf fdo:Real .
+fdo:Cleaner rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Passive rdfs:subClassOf fdo:Fictional .
+fdo:Cleric rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:PassiveCollectible rdfs:subClassOf fdo:Secret .
+fdo:Client rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:PatchNotes rdfs:subClassOf fdo:EquipableItem .
+fdo:CloseInWeaponSystem rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:Photo rdfs:subClassOf fdo:Real .
+fdo:Clothing rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:PhysicalAbility rdfs:subClassOf fdo:Ability .
+fdo:ClothingStore rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Planet rdfs:subClassOf fdo:Real .
+fdo:Club rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Platform rdfs:subClassOf fdo:Real .
+fdo:ClubManager rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:Podcast rdfs:subClassOf fdo:EquipableItem .
+fdo:CoFounder rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:PoliticalCompany rdfs:subClassOf fdo:Evil .
+fdo:CoOpEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:PreOrderQuest rdfs:subClassOf fdo:Secret .
+fdo:CoOpMissionAchievement rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Prison rdfs:subClassOf fdo:Real .
+fdo:Coach rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:PrisonCell rdfs:subClassOf fdo:Real .
+fdo:Coalition rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:PrivateCorporation rdfs:subClassOf fdo:Secret .
+fdo:CoalitionGovernment rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:PrivateSecurity rdfs:subClassOf fdo:Real .
+fdo:Coaster rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ProcessingMachine rdfs:subClassOf fdo:EquipableItem .
+fdo:CodeFragment rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Production rdfs:subClassOf fdo:Hero .
+fdo:CodexEntry rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:ProductionBuilding rdfs:subClassOf fdo:Hero .
+fdo:Cog rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ProductionFacility rdfs:subClassOf fdo:Hero .
+fdo:Coin rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ProfileIcon rdfs:subClassOf fdo:Real .
+fdo:Collectable rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Project rdfs:subClassOf fdo:Secret .
+fdo:Collectible rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:ProjectPart rdfs:subClassOf fdo:Secret .
+fdo:CollectibleAchievement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Projectile rdfs:subClassOf fdo:EquipableItem .
+fdo:CollectibleItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Protagonist rdfs:subClassOf fdo:Race .
+fdo:CollectingQuest rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ProvingGroundProject rdfs:subClassOf fdo:Real .
+fdo:Collection rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:PuzzlePlatform rdfs:subClassOf fdo:Real .
+fdo:ColonizationTechnology rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:PuzzleRoom rdfs:subClassOf fdo:Real .
+fdo:ColonySimulator rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:PyromancerSkill rdfs:subClassOf fdo:Ability .
+fdo:CombatAbility rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Pyromancy rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatAchievement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:QALead rdfs:subClassOf fdo:Race .
+fdo:CombatConsumable rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RPG rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatEnhancement rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RangedCavalry rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatMechanic rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RangedWeapon rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatMod rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RareCollectible rdfs:subClassOf fdo:Holiday .
+fdo:CombatModule rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RawMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatScenario rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Realm rdfs:subClassOf fdo:Real .
+fdo:CombatSkill rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Record rdfs:subClassOf fdo:Holiday .
+fdo:CombatSupportUnit rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Recording rdfs:subClassOf fdo:Holiday .
+fdo:CombatSystem rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RefinedCraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:CombatTechnique rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Region rdfs:subClassOf fdo:Real .
+fdo:CombatTechnology rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:RegionCity rdfs:subClassOf fdo:Real .
+fdo:ComicBook rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Relay rdfs:subClassOf fdo:Real .
+fdo:ComicIssue rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Relic rdfs:subClassOf fdo:Real .
+fdo:Command rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:RelicCraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:CommandShip rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ReligiousOrganization rdfs:subClassOf fdo:Secret .
+fdo:Commander rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Reptile rdfs:subClassOf fdo:EquipableItem .
+fdo:Commando rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Republic rdfs:subClassOf fdo:Hero .
+fdo:CommercialEntity rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Research rdfs:subClassOf fdo:EquipableItem .
+fdo:CommercialService rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ResearchCentre rdfs:subClassOf fdo:Real .
+fdo:Commission rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ResearchFacility rdfs:subClassOf fdo:Real .
+fdo:CommonArea rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:ResearchProject rdfs:subClassOf fdo:Secret .
+fdo:CommonEnemy rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ResearchRecordsReports rdfs:subClassOf fdo:EquipableItem .
+fdo:CommonFootsoldier rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ResearchTechnology rdfs:subClassOf fdo:EquipableItem .
+fdo:CommunicationEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Residential rdfs:subClassOf fdo:Real .
+fdo:CommunityManager rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ResidentialHome rdfs:subClassOf fdo:Real .
+fdo:Compact rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ResidentialStructure rdfs:subClassOf fdo:Real .
+fdo:Company rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Resource rdfs:subClassOf fdo:EquipableItem .
+fdo:CompanyBoss rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ResourceArea rdfs:subClassOf fdo:Real .
+fdo:Compendium rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ResourceBuilding rdfs:subClassOf fdo:Real .
+fdo:Competition rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:ResourceCollector rdfs:subClassOf fdo:EquipableItem .
+fdo:CompetitiveMode rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ResourceGatheringBuilding rdfs:subClassOf fdo:Hero .
+fdo:CompetitiveTeam rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ResourceManagement rdfs:subClassOf fdo:Hero .
+fdo:CompletionAchievement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ResourceProduction rdfs:subClassOf fdo:EquipableItem .
+fdo:Composer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ResourceProductionSite rdfs:subClassOf fdo:Real .
+fdo:Computer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Restaurant rdfs:subClassOf fdo:Real .
+fdo:ConceptualPuzzle rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Road rdfs:subClassOf fdo:Real .
+fdo:Condition rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Roadside rdfs:subClassOf fdo:Real .
+fdo:ConflictRequest rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Roguelite rdfs:subClassOf fdo:Real .
+fdo:Conglomerate rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:Room rdfs:subClassOf fdo:Real .
+fdo:Console rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Rug rdfs:subClassOf fdo:EquipableItem .
+fdo:ConsoleAchievement rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Ruins rdfs:subClassOf fdo:Real .
+fdo:ConsoleCommands rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Ruler rdfs:subClassOf fdo:EquipableItem .
+fdo:Construct rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Rundown rdfs:subClassOf fdo:EquipableItem .
+fdo:Construction rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Rune rdfs:subClassOf fdo:Real .
+fdo:ConstructionMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Runestone rdfs:subClassOf fdo:Real .
+fdo:ConstructionPlatform rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:SQUID rdfs:subClassOf fdo:EquipableItem .
+fdo:Constructor rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SavePoint rdfs:subClassOf fdo:Real .
+fdo:Consultant rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Scenario rdfs:subClassOf fdo:EquipableItem .
+fdo:Consumable rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Scene rdfs:subClassOf fdo:Real .
+fdo:ConsumableItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Scenery rdfs:subClassOf fdo:Real .
+fdo:ContactEffect rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Scout rdfs:subClassOf fdo:Real .
+fdo:Container rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SeabaseModule rdfs:subClassOf fdo:Real .
+fdo:ContentAddon rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:SeasonalEvent rdfs:subClassOf fdo:Holiday .
+fdo:ContentBundle rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Seating rdfs:subClassOf fdo:Real .
+fdo:ContentCreator rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Secondary rdfs:subClassOf fdo:Real .
+fdo:ContentExpansion rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SecondaryWeapon rdfs:subClassOf fdo:EquipableItem .
+fdo:ContentPack rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SecretLevel rdfs:subClassOf fdo:Fictional .
+fdo:ContentUpdate rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:SecretRoom rdfs:subClassOf fdo:Real .
+fdo:Contestant rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Sedan rdfs:subClassOf fdo:Real .
+fdo:Contraband rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Sentinel rdfs:subClassOf fdo:Real .
+fdo:ControllerSpecialist rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Server rdfs:subClassOf fdo:EquipableItem .
+fdo:ConvenienceStore rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Settlement rdfs:subClassOf fdo:Real .
+fdo:CookingChallenge rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:SettlementUpgrade rdfs:subClassOf fdo:Real .
+fdo:CookingEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Shields rdfs:subClassOf fdo:EquipableItem .
+fdo:CookingGame rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Ship rdfs:subClassOf fdo:EquipableItem .
+fdo:CooldownSystem rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ShipEquipment rdfs:subClassOf fdo:EquipableItem .
+fdo:CooperativePlay rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ShoppingMall rdfs:subClassOf fdo:Real .
+fdo:Cop rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:ShopsAndFacilities rdfs:subClassOf fdo:Real .
+fdo:Core rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:ShortFilm rdfs:subClassOf fdo:EquipableItem .
+fdo:CoreModule rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Show rdfs:subClassOf fdo:Holiday .
+fdo:CoreUpgrade rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Shrine rdfs:subClassOf fdo:Real .
+fdo:Coromon rdfs:subClassOf fdo:EvilHighLevel .
 
-fdo:Side rdfs:subClassOf fdo:Real .
+fdo:Corporation rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:SideQuest rdfs:subClassOf fdo:Fictional .
+fdo:Corvette rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Sidequest rdfs:subClassOf fdo:Real .
+fdo:Cosmetic rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Sigil rdfs:subClassOf fdo:EquipableItem .
+fdo:CosmeticCollection rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SilverTrophy rdfs:subClassOf fdo:EquipableItem .
+fdo:CosmeticItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Site rdfs:subClassOf fdo:Real .
+fdo:CosmeticSet rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Skin rdfs:subClassOf fdo:Race .
+fdo:CosmicEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Skull rdfs:subClassOf fdo:EquipableItem .
+fdo:Costume rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Slime rdfs:subClassOf fdo:EquipableItem .
+fdo:CouncilBuilding rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:SmithyMaterial rdfs:subClassOf fdo:EquipableItem .
+fdo:CouncilLeader rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:SocialMediaCompany rdfs:subClassOf fdo:Hero .
+fdo:CouncilMember rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:Soggies rdfs:subClassOf fdo:EquipableItem .
+fdo:CountermeasureTech rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Souvenir rdfs:subClassOf fdo:EquipableItem .
+fdo:Country rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:SpaceStation rdfs:subClassOf fdo:Real .
+fdo:Couple rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Spacecraft rdfs:subClassOf fdo:EquipableItem .
+fdo:Courier rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Spaceport rdfs:subClassOf fdo:Real .
+fdo:Course rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SpecialArea rdfs:subClassOf fdo:Real .
+fdo:CourtingGift rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:SpecialEvent rdfs:subClassOf fdo:Holiday .
+fdo:CovenantItem rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:SpecialItem rdfs:subClassOf fdo:Holiday .
+fdo:CovertOperation rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:SpecialOperationsUnit rdfs:subClassOf fdo:Secret .
+fdo:CraftableItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SpecializedUnit rdfs:subClassOf fdo:Secret .
+fdo:CraftedItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Species rdfs:subClassOf fdo:Race .
+fdo:CraftingComponent rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Squadron rdfs:subClassOf fdo:Hero .
+fdo:CraftingEquipment rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Staff rdfs:subClassOf fdo:Secret .
+fdo:CraftingEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Stage rdfs:subClassOf fdo:Real .
+fdo:CraftingItem rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:StageOfGrief rdfs:subClassOf fdo:EquipableItem .
+fdo:CraftingMachine rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Stamp rdfs:subClassOf fdo:EquipableItem .
+fdo:CraftingMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:StartingArea rdfs:subClassOf fdo:Real .
+fdo:CraftingRecipe rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Station rdfs:subClassOf fdo:Real .
+fdo:CraftingResource rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:StationaryDevice rdfs:subClassOf fdo:Real .
+fdo:CraftingStation rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Statue rdfs:subClassOf fdo:EquipableItem .
+fdo:CraftingStationEnhancement rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:StealthQuest rdfs:subClassOf fdo:Fictional .
+fdo:Crater rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Sticker rdfs:subClassOf fdo:EquipableItem .
+fdo:CreativeDirector rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Storage rdfs:subClassOf fdo:Real .
+fdo:CreativiToy rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:StorageContainer rdfs:subClassOf fdo:Secret .
+fdo:CreativiToys rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:StorageItem rdfs:subClassOf fdo:Real .
+fdo:Creator rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Store rdfs:subClassOf fdo:Real .
+fdo:Creature rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:StoryArea rdfs:subClassOf fdo:Real .
+fdo:CreatureCatalyst rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Strand rdfs:subClassOf fdo:Real .
+fdo:CreatureEssence rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:StreetGang rdfs:subClassOf fdo:Real .
+fdo:CreatureFood rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Structure rdfs:subClassOf fdo:Hero .
+fdo:CreatureStable rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Studio rdfs:subClassOf fdo:Real .
+fdo:Creep rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SubBattlefield rdfs:subClassOf fdo:Real .
+fdo:CreepyMutant rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SubBoss rdfs:subClassOf fdo:Secret .
+fdo:Crew rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:SubQuest rdfs:subClassOf fdo:Real .
+fdo:CrewMember rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:SuburbanTown rdfs:subClassOf fdo:Real .
+fdo:CrewResidence rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:SummonUnit rdfs:subClassOf fdo:Real .
+fdo:Crib rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SupplyQuest rdfs:subClassOf fdo:EquipableItem .
+fdo:Crime rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:SupportItem rdfs:subClassOf fdo:EquipableItem .
+fdo:CrimeBoss rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:SupportSkillGem rdfs:subClassOf fdo:EquipableItem .
+fdo:Critter rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:SurrealArea rdfs:subClassOf fdo:Fictional .
+fdo:Crop rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Sword rdfs:subClassOf fdo:EquipableItem .
+fdo:CruiseLine rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:System rdfs:subClassOf fdo:Hero .
+fdo:CrypticVessel rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TacticalRPG rdfs:subClassOf fdo:EquipableItem .
+fdo:CulturalAssociation rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TacticalTeamLeader rdfs:subClassOf fdo:Hero .
+fdo:CulturalEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Tactics rdfs:subClassOf fdo:EquipableItem .
+fdo:CulturalMechanic rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TaskForce rdfs:subClassOf fdo:Secret .
+fdo:CulturalTheme rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Taskmaster rdfs:subClassOf fdo:Evil .
+fdo:Curio rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Tavern rdfs:subClassOf fdo:Real .
+fdo:Curiosity rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Team rdfs:subClassOf fdo:Secret .
+fdo:Currency rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TeamScoreMode rdfs:subClassOf fdo:Hero .
+fdo:Curse rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TechResearch rdfs:subClassOf fdo:EquipableItem .
+fdo:Custodian rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Temple rdfs:subClassOf fdo:Real .
+fdo:CustomRoshan rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:TempleRitual rdfs:subClassOf fdo:Real .
+fdo:CustomerReview rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Temtem rdfs:subClassOf fdo:Real .
+fdo:CutContent rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Terrain rdfs:subClassOf fdo:Real .
+fdo:Cutscene rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TerritorialFaction rdfs:subClassOf fdo:Real .
+fdo:CyberRogueShooter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TerroristReligiousOrganization rdfs:subClassOf fdo:Evil .
+fdo:Cyborg rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TheWilliamsCollection rdfs:subClassOf fdo:Real .
+fdo:DLC rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:TheologicalWritings rdfs:subClassOf fdo:EquipableItem .
+fdo:DLCCharacter rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:TitanPrimaryWeapon rdfs:subClassOf fdo:EquipableItem .
+fdo:DLCPack rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Tool rdfs:subClassOf fdo:EquipableItem .
+fdo:DLCPrison rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Tour rdfs:subClassOf fdo:Real .
+fdo:DLCQuest rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Tower rdfs:subClassOf fdo:Real .
+fdo:Daemon rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Town rdfs:subClassOf fdo:Real .
+fdo:DailyHeroicEncounter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TownService rdfs:subClassOf fdo:Real .
+fdo:DailyQuest rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Townhouse rdfs:subClassOf fdo:Real .
+fdo:DamageDealer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Townie rdfs:subClassOf fdo:Real .
+fdo:DamageInflictingTool rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Townsfolk rdfs:subClassOf fdo:Real .
+fdo:DamageItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Townspeople rdfs:subClassOf fdo:Real .
+fdo:DamageModifier rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ToxicAbility rdfs:subClassOf fdo:Ability .
+fdo:DamageSpell rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Toy rdfs:subClassOf fdo:EquipableItem .
+fdo:DamageType rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Track rdfs:subClassOf fdo:Real .
+fdo:DanceSong rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TrackInformation rdfs:subClassOf fdo:Real .
+fdo:DanceTrack rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:TrainStation rdfs:subClassOf fdo:Real .
+fdo:Danger rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:TrainingFacility rdfs:subClassOf fdo:Hero .
+fdo:DarkFaction rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Trapper rdfs:subClassOf fdo:Real .
+fdo:Dash rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Traveler rdfs:subClassOf fdo:Real .
+fdo:DataArtifact rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Treasure rdfs:subClassOf fdo:EquipableItem .
+fdo:DataCapsule rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Trick rdfs:subClassOf fdo:EquipableItem .
+fdo:DataDrive rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:TrickeryCard rdfs:subClassOf fdo:EquipableItem .
+fdo:DataHub rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:TriggeringEvent rdfs:subClassOf fdo:Holiday .
+fdo:DataManipulationCommand rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Trinket rdfs:subClassOf fdo:EquipableItem .
+fdo:DataPoint rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Turret rdfs:subClassOf fdo:Real .
+fdo:DataUpdate rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:UFO rdfs:subClassOf fdo:EquipableItem .
+fdo:DatabaseServer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:UnderTheSeaLand rdfs:subClassOf fdo:Real .
+fdo:DayQuest rdfs:subClassOf fdo:RealHighLevel .
 
-fdo:Union rdfs:subClassOf fdo:Hero .
+fdo:DeathResurrection rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Unit rdfs:subClassOf fdo:Real .
+fdo:DeathWishMission rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:UnitCard rdfs:subClassOf fdo:Real .
+fdo:Debuff rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:UnitTrainingFacility rdfs:subClassOf fdo:Real .
+fdo:Decade rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:UnitType rdfs:subClassOf fdo:Real .
+fdo:Decal rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:UniversityOrganization rdfs:subClassOf fdo:Secret .
+fdo:DeceasedCharacter rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Unknown rdfs:subClassOf fdo:Fictional .
+fdo:Deck rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:UpgradeComponent rdfs:subClassOf fdo:EquipableItem .
+fdo:Deckbuilder rdfs:subClassOf fdo:HeroHighLevel .
 
-fdo:UsableItem rdfs:subClassOf fdo:EquipableItem .
+fdo:Decor rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Valuable rdfs:subClassOf fdo:EquipableItem .
+fdo:Decoration rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:ValuableItem rdfs:subClassOf fdo:EquipableItem .
+fdo:DecorativeItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Valuables rdfs:subClassOf fdo:EquipableItem .
+fdo:Decryption rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Vegetation rdfs:subClassOf fdo:EquipableItem .
+fdo:Defector rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Vehicle rdfs:subClassOf fdo:EquipableItem .
+fdo:Defender rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:VehicleManufacturer rdfs:subClassOf fdo:EquipableItem .
+fdo:Defense rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Village rdfs:subClassOf fdo:Real .
+fdo:DefenseAbility rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Wall rdfs:subClassOf fdo:Real .
+fdo:DefenseItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WallItem rdfs:subClassOf fdo:Real .
+fdo:DefenseLevel rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Wallpaper rdfs:subClassOf fdo:EquipableItem .
+fdo:DefenseMechanism rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WanderingNPC rdfs:subClassOf fdo:Real .
+fdo:DefenseStructure rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:Warden rdfs:subClassOf fdo:Real .
+fdo:DefenseTechnology rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Waystation rdfs:subClassOf fdo:Real .
+fdo:Defensive rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Weapon rdfs:subClassOf fdo:EquipableItem .
+fdo:DefensiveAbility rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WeaponAttachment rdfs:subClassOf fdo:EquipableItem .
+fdo:DefensiveBuilding rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WeaponPlatform rdfs:subClassOf fdo:Real .
+fdo:DefensiveCard rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WeaponSkin rdfs:subClassOf fdo:EquipableItem .
+fdo:DefensiveItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WeaponTechnology rdfs:subClassOf fdo:EquipableItem .
+fdo:DefensiveStructure rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:WeeklySchedule rdfs:subClassOf fdo:Hero .
+fdo:Deity rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Widget rdfs:subClassOf fdo:EquipableItem .
+fdo:DeliveryOrder rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Wielder rdfs:subClassOf fdo:Hero .
+fdo:DeliveryQuest rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Wilderness rdfs:subClassOf fdo:Real .
+fdo:Demigod rdfs:subClassOf fdo:LivingBeingHighLevel .
 
-fdo:Wishstone rdfs:subClassOf fdo:Real .
+fdo:Demon rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WorkProducingMachine rdfs:subClassOf fdo:Hero .
+fdo:DemonEvent rdfs:subClassOf fdo:EventHighLevel .
 
-fdo:Workshop rdfs:subClassOf fdo:Hero .
+fdo:DemonHunter rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Workstation rdfs:subClassOf fdo:EquipableItem .
+fdo:DemonHuntress rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:World rdfs:subClassOf fdo:Real .
+fdo:DemonImp rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:WorldArea rdfs:subClassOf fdo:Real .
+fdo:Department rdfs:subClassOf fdo:SecretHighLevel .
 
-fdo:WorldQuest rdfs:subClassOf fdo:Real .
+fdo:Deployable rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:WraithLair rdfs:subClassOf fdo:Real .
+fdo:Designer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Zone rdfs:subClassOf fdo:Real .
+fdo:Destroyer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Location rdfs:subClassOf fdo:Real .
+fdo:Destructible rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Object rdfs:subClassOf fdo:EquipableItem .
+fdo:DestructibleItem rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Organization rdfs:subClassOf fdo:Hero .
+fdo:Detective rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Evil rdfs:subClassOf fdo:Organization .
+fdo:Developer rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Ability rdfs:subClassOf fdo:Object .
+fdo:Device rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Race rdfs:subClassOf fdo:Living_Being .
+fdo:Devil rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Fictional rdfs:subClassOf fdo:Location .
+fdo:Diagnosis rdfs:subClassOf fdo:EquipableItemHighLevel .
 
-fdo:Holiday rdfs:subClassOf fdo:Event .
+fdo:DiagnosisMachine rdfs:subClassOf fdo:ActionHighLevel .
 
-fdo:Secret rdfs:subClassOf fdo:Organization .
+fdo:DifficultyLevel rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Hero rdfs:subClassOf fdo:Organization .
+fdo:DifficultyMode rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:EquipableItem rdfs:subClassOf fdo:Object .
+fdo:DifficultySetting rdfs:subClassOf fdo:ObjectHighLevel .
 
-fdo:Real rdfs:subClassOf fdo:Location .
+fdo:Dinosaur rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Director rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Disciple rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:DisciplinaryAction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Discovery rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Disease rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Dish rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Disk rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Distraction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:District rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:DivinationCard rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Divinity rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Doctor rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Doctrine rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Document rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Dodge rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:DojoMission rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Dome rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:DomeService rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:DomeServices rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:DoomEngineMod rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:DormApartment rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:DownloadableContent rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Draft rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Dragon rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:DramaCD rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Dreadnaught rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Dream rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Drink rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Drive rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Driver rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:DropServer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Drug rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Dueler rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Dungeon rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:DungeonArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Dye rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:EcologistFaction rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:EconomicAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:EconomicStructure rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:EcosystemEntity rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EducationalMode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Effect rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:EffectItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EffectModifier rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:ElderDemon rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ElderDragon rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Eldritch rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:EldritchBeing rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Election rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ElectricPole rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ElectricalItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ElectronicDevice rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Electronics rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Element rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ElementType rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Elemental rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:ElementalAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:ElementalBoss rdfs:subClassOf fdo:EvilHighLevel .
+
+fdo:EliminatorBot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:EliteCommander rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:EliteEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EliteSoldier rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Emblem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EmergencySituation rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EmergencyVehicle rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Emote rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Emoticon rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Empire rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Employee rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Ending rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Enemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EnemyAutopsy rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:EnemyCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EnemyCreature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EnemyType rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Energy rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EnergyCell rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:EnergyCore rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:EnergyWeapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Enforcer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Enhancement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Entertainment rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EntertainmentDevice rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EntertainmentItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Entity rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Environment rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:EnvironmentCommand rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:EnvironmentalEffect rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Epic rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EpicCharacter rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Episode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EpisodeLevel rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EquipableItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Equipment rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:EquipmentUpgrade rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EraModifier rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EscapeTeamDLCItem rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:EscortQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:EsportsTeam rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Essence rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Ether rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:EuroFighterCoaster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Event rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EventItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EventQuest rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EventTrigger rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EventVenue rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Evidence rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Evolution rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:EvolvedCoromon rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Executive rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ExiledDragoon rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ExitPuzzle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Expansion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ExpansionPack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Expedition rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ExperimentalAnimatronic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ExplorationQuest rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Explosion rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Explosive rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Exterior rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Extractor rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FPS rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Facility rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:FacilityAssault rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FacilityModification rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:FacilityUpgrade rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Faction rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Factory rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:FactoryExpansion rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Familiar rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Family rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:FamilyCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Farm rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:FarsideAnalysis rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:FastTravelSystem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Fauna rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Favor rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FavorQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Feat rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FeatureFilm rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Fencing rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Fiction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FictionalCorporation rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:FieldTile rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:FieldTool rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Fiend rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Fighter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FighterAircraft rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FightingGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Figment rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Figure rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Figurine rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FinalBoss rdfs:subClassOf fdo:EvilHighLevel .
+
+fdo:FineChemical rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Finesse rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FireStarting rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Firearm rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Firelings rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FirstPersonShooter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FirstPersonShooterHorror rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Fish rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Fishing rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FishingLine rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FishingRod rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Fleet rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Flooring rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FlooringWalls rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Flora rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Flower rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FlyingEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FocusSkill rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Foe rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FollowUpEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Follower rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FollowerEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Food rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FoodAndDrink rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FoodItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:FoodProduction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FoodProductionBuilding rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FootballTeam rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Footwear rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ForageRequest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ForceOfNature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ForcesOfNature rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ForegroundSpray rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:FragilePosition rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:FreelanceArtist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Freighter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Friend rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Friendship rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Frigate rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:FruitBearingTree rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:FullSize rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Furniture rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FurnitureItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FurnitureWallDecoration rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:FusionItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Gadget rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Game rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:GameAchievement rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameAct rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameAlteration rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameBundle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameCategory rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameChapter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameCommand rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameCompletion rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameConsole rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:GameContent rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameDay rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameDesigner rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameDeveloper rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameDevelopmentStudio rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameDevelopmentTeam rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameDirector rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameElement rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameEnding rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameEntity rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameEpisode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameExpansion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameFaction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameFeature rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameInformation rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameLevel rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameLevelAccess rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameLevelAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameLocation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:GameMap rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameMechanic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameMission rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameMod rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameMode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameModification rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameMusic rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameMusicTrack rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameObject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameObjective rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:GamePuzzle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameReleaseYear rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameReward rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameRule rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameScenario rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameSequence rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameSettingModification rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameSoundtrack rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameStoryElement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameStudio rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameTheme rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameTitle rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameTour rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameTrack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameUpdate rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameVersion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameYear rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameplayAchievement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameplayCommand rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameplayContent rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameplayEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:GameplayGear rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameplayMechanic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameplayMechanics rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GameplayMission rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GameplayTutorial rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GamerscoreAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GamingAchievement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GamingEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Gang rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Garage rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Garden rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Gear rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Gem rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Gemstone rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:General rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GeneralAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GeneralAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GeographicalArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Ghost rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GhostChild rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GiantCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Gift rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Gizmo rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Glitch rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GlitchLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GlitchedItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Glove rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Gloves rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Goal rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:God rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Goddess rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:GoldAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:GoldTrophy rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Golem rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:GoverningBody rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Government rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Governor rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GreaterDemon rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Grenade rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Grindstone rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Ground rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:GroundTypePokemon rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Group rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Guardian rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:GuardianSentry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:GuardianSpirit rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Guest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Guide rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Gun rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Gunner rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Gunship rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Gunslinger rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Gym rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Hacker rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HackingTool rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HacktivistGroup rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Handgun rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HandheldConsole rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HandheldGameConsole rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Harbour rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Hardware rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Hardwired rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HardwiredUpgrade rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:HarvestSprite rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HarvestableItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Hat rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HatBundle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HauntingCase rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Hazard rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Head rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Headgear rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Headwear rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Healer rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HealingAbility rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HealingItem rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HeatingTechnology rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Heavy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HeavyAttack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HeavyBomber rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HeavyDefense rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HeavyWeapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HeldItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HellEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Henchman rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Herb rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Hero rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HeroAbility rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HeroEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:HeroSkill rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HeroicAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Hex rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:HexArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:HiddenBase rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:HiddenEnding rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HiddenLevel rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:HiddenQuest rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:HiddenRealm rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:HiddenTrophy rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:Hideout rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:HidingPlace rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:Hint rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HissatsuMove rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HissatsuTactic rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HissatsuTechnique rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HistoricalEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Hitchhiker rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Hologram rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HolographicQuest rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:HomeFighter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HomeType rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Horror rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:HorrorGame rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:HostileCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:HostileCreature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Hostility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Hotfix rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:House rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Household rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HouseholdItem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Houseware rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Housing rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:HugeEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Human rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HumanCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:HumanMandragora rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:HumanMutant rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:HumanPlayer rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Humanoid rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:Hunter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:HunterAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Hybrid rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ImmobileRangedTroop rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ImmortalBeing rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Immunity rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Improvement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InanimateObject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Incident rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:IndieActionRoguelike rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:IndieAdventure rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:IndieAdventurePlatformer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:IndieDeveloper rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:IndieGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:IndiePlatformer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:IndiePuzzleAdventure rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Individual rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:IndoorArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:IndustrialArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Infantry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InfantryDivision rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InfantryRegiment rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InfantrySupportHero rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InfantryUnit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InfoItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Infrastructure rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:IngredientProvider rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Inhabitant rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Injectable rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Injury rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:InkMonster rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Insect rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:InsectEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Inserter rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Inspector rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Installment rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Instrument rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Interactive rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InteractiveArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:InteractiveBuilding rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:InteractiveFiction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:InteractiveObject rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:InteractiveStory rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Interceptor rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:IntergovernmentalMilitaryAlliance rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:InteriorPiece rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:IntermediateItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:IntermissionLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Invasion rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:InventoryItem rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:InvertedCoaster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Investigation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Island rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Item rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:ItemFetchQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:JPop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:JPopSingle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Jewellery rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Jewelry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Job rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:JobBoardQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Jockey rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Juggernaut rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:JumpingPuzzle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:JuniorArtist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:JuvenileCreature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Kart rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:KeyItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:KeyQuest rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:KickTechnique rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:KillerEncounter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:KillingAchievement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:King rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Kingdom rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Knight rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:KnightFaction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Knights rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:LabourLaw rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Lamp rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Landmark rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Landmine rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Landscape rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Language rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Laptop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:LargeEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LargeMonster rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LateralThinkingPuzzle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Law rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Leader rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Leadership rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:LegAugmentation rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Legend rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LegendQuestItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LegendaryChallenge rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LegendaryTechnique rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LegendaryYokai rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:LegionArm rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:LesserDemon rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Letter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Level rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LevelCompletion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LevelEditor2DPlatformGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LevelMission rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LevelPuzzle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LevelUpgrade rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LifeSimulation rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:LifeSimulationGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LifeSimulationRolePlaying rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Lifeform rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Light rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LightAssaultCarrier rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:LightBattlestar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:LightSource rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Lighthouse rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LimitedItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LimitedTimeEvent rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Limiter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Liquid rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Literature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LivingArmor rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:LivingQuarters rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LoadingScreen rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Location rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Locomotive rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LogicProcessing rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LongBlock rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Loot rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LootBox rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LootChest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:LootItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Lord rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:LordCommander rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Lore rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LoreCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:LoreDocument rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:LoreEvent rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:LoreItem rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MOBA rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Machine rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Magazine rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mage rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Magic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:MagicAttribute rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicCrystal rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicSpell rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicTotem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MagicalAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicalBeing rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MagicalCreature rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MagicalRealm rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Magician rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Magus rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Main rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MainCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MainEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MainHub rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MainMission rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MainProtagonist rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MainQuest rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MainScenario rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MainStory rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Mainframe rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MainframeBranch rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MaintenanceRequest rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MajorInjury rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MaleCharacter rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:MaleOctoling rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MalePartner rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Mammal rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:ManagementSim rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:ManagementTacticalCombat rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Maneuver rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Manufacturer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ManufacturingFacility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Map rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MarineAnimal rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Marksman rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MartialArt rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MarvelEmote rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Mascot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MasterRelayer rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Match rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MatchEvaluation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MatchMilestone rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MatchRequirement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MatchType rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Material rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Maze rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MazePuzzler rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MeaCulpaHeart rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Mech rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MechWarrior rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mecha rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Mechanic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mechanical rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MechanicalCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MechanicalDevice rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MechanicalEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MechanicalItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MechanicalUnit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mechanism rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Medic rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MedicalEquipment rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MedicalTechnology rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MediumAttack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MediumBoss rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MediumEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Meeting rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MegaSpell rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Melee rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeAttack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeCavalry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeCharacter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeInfantry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeSkill rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeTroop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeUnit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MeleeWeapon rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Member rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Memento rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Memory rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MentionedOnlyLocation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Mercenary rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:MercenaryCompany rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Merchant rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Message rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MetaHuman rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Metal rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MetroArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Metroidvania rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Microtransaction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Midfielder rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Milestone rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MilitaristFaction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MilitaryArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MilitaryBuilding rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MilitaryDivision rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryFleet rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MilitaryForce rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MilitaryFormation rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryGroup rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryOperation rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryOrganization rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryPilot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MilitaryStructure rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:MilitaryTrainingGroup rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MilitaryUnit rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Militia rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MilitiaFleet rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mimic rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Miner rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MiniBoss rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MiniBossChallenge rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MiniBossFight rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MiniGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MiningTechnology rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MinorEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MinorFaction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Miracle rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Misc rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Miscellaneous rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MiscellaneousEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MiscellaneousItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MiscellaneousQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mission rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MissionArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:MissionItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MissionObjective rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MissionOpportunity rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mob rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MobileCastle rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Mobs rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MobsterGuard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MobsterLeader rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mod rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mode rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Modifier rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Module rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Monk rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Monster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Monument rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mook rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:Moon rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Motorcycle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mount rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Move rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MovementAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MovementOperator rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MovementSkill rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Movie rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:MultiplayerActionGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MultiplayerMap rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MultiplayerMode rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Munition rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MunitionsUnit rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:MuscleCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Music rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:MusicAlbum rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MusicCollection rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:MusicContent rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MusicGame rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MusicItem rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:MusicPerformance rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MusicalComposition rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MusicalEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MusicalItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:MusicalPiece rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:MusicalToy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MusicalTrack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Musician rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Mutant rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:MutantCreature rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MysteryFile rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Mystic rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:MythicalBeing rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MythologicalFamily rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:MythologicalGroup rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NPC rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Namecard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Narrative rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:NarrativeChapter rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:NarrativeObject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NarrativeQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Nation rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:NaturalFishingLad rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:NaturalResource rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:NatureClubItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:NavalBattle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:NegativeEffect rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NegativeTrait rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NegativeVampire rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Neighborhood rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:NetworkEngineer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:NetworkNode rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:NetworkService rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Neutral rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NeutralCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NeutralNPC rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NewsItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:NightSprings rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Nightclub rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:NinjaResistanceMember rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Noble rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:NobleGas rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:NobleHouse rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Node rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:NomadicArmy rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:NonInteractiveItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NonPlayableCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NonPlayableItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NonPlayerCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:None rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NormalAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:NormalEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NormalTypeCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Note rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NoteType rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:NoticeBoardQuest rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Noun rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Novel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Nursery rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:OVA rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Oasis rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Object rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Objective rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ObjectiveBasedMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ObjectiveMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ObjectiveQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ObjectivesBasedMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Observer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Obstacle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Obstruction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OffensiveAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:OffensiveItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OffensiveWeapon rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Office rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Officer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:OfficialEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:OldOne rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OlympianGod rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:OlympianGoddess rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:OneHandedWeapon rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OngoingQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OnlineArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:OnlineMission rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:OobletMove rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Operation rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Operator rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Opportunity rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Optic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Optics rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OptionalMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OptionalProject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Orb rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Order rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Organic rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Organization rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Origin rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:OriginalLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OriginalSoundtrack rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:OriginalVersion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Other rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Outfit rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Outlaw rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:OverworldArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:OzKit rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:PC rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PachislotGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pack rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Painting rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Paladin rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:PartyMember rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PartyTrinket rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Pass rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Passenger rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Passive rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:PassiveAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PassiveAura rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:PassiveCollectible rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:PassiveItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PassivePerk rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PassiveSkill rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PatchNotes rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:PayPerViewEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Performance rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PerformanceCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Perk rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Person rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Pet rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:PetRescueEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Philosophy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Photo rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PhysicalAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:Pilot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PinballGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PinballMachine rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PinballTable rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pirate rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PirateCaptain rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pirates rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pistol rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PistonCupRacer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Planet rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Plant rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Platform rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PlatformGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Platformer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PlatinumAchievement rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Playable rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PlayableCharacter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PlayableGameMode rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PlayableProtagonist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Player rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:PlayerAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PlayerCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:PlayerTeam rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Plushie rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pod rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Podcast rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:PointAndClickAdventure rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Poison rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Pokemon rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PokemonTrainer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PoliticalCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PoliticalCoalition rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PoliticalCompany rdfs:subClassOf fdo:EvilHighLevel .
+
+fdo:PoliticalEntity rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:PoliticalEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:PoliticalFaction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PoliticalFigure rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PoliticalLeader rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Politician rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Pool rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PositiveAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Poster rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PosthumousCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Potion rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Power rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PowerCard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PowerGeneratingBuilding rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PowerGenerator rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PowerSkill rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PowerUp rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PowerUpCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Practice rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Prayer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PreOrderQuest rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:PrecursorStructure rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Predator rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PremiumMod rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PrimaryQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Prince rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Princess rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Prison rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PrisonCell rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Prisoner rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PrivateCorporation rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:PrivateSecurity rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ProGamer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ProPlayer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Process rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ProcessingMachine rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Proclamation rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Producer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Production rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ProductionBuilding rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ProductionFacility rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ProductionUpgrade rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ProfessionalPlayer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ProfileIcon rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Progress rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Project rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:ProjectPart rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Projectile rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ProjectileModifier rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Prophecy rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Protagonist rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:Protector rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ProvingGroundProject rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PsychologicalHorror rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Publication rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Puzzle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleAdventure rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PuzzleAdventurePlatformer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:PuzzleElement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleHub rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleLesson rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzlePlatform rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PuzzlePlatformGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzlePlatformer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleRoom rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:PuzzleSimulation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PuzzleStrategy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:PyromancerSkill rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:Pyromancy rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:QALead rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:Quadruped rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Queen rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Quest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:QuestAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:QuestItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:QuestStoryline rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:QuizGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RPG rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:RPGStrategy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Race rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RaceCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RaceTrack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Racer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RacingCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RacingEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RacingGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RacingTrack rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RadioShow rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RadioactiveElement rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RandomEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RangedCavalry rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:RangedInfantry rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RangedTroop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RangedWeapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Ranger rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RangerBatallion rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RangerBattalion rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Rare rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RareCharacter rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:RareCollectible rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:RareTechnology rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Raver rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RawCraftingMaterial rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RawMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Reactor rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Realm rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Rebel rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RebelGroup rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ReconVehicle rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Record rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Recording rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:RecoveryRequest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RecruitAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RefinedCraftingMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Region rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RegionCity rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Regular rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Relationship rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:RelationshipItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Relay rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Release rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ReliableAlchemist rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Relic rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RelicCraftingMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:RelicPiece rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ReligiousOrganization rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:RepairBay rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ReplayabilityFeature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Reptile rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Republic rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Request rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RequestType rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Requests rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Research rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResearchCentre rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResearchEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:ResearchFacility rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResearchItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ResearchProject rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:ResearchRecordsReports rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResearchTechnology rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResearchUpgrade rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Researcher rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Residence rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Resident rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:ResidentQuest rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Residential rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResidentialHome rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResidentialStructure rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Resource rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResourceArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResourceBuilding rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ResourceCollector rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResourceGatheringBuilding rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ResourceGenerationBuilding rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ResourceGenerator rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ResourceManagement rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:ResourceProducer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ResourceProduction rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ResourceProductionBuilding rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ResourceProductionSite rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RespawnPoint rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Restaurant rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RetailShop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RetroFPS rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RevivalAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Revolutionary rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Reward rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RhythmGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Ride rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Riot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Rival rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Road rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Roadside rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Robber rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Robot rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RobotCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Rodent rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:RogueLike rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RogueLikeCCG rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RogueLiteStrategyTacticalRPG rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Roguelite rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RogueliteFarmingSimulator rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Role rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:RolePlayingGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RollerCoaster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Romance rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:RoninMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Room rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:RoyalGuard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Royalty rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Rug rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Ruins rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Ruler rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Rundown rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Rune rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Runestone rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SQUID rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Sabbat rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SafariAnimal rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Saga rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SagaQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SaleBox rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SavePoint rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SavedMachineRecord rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SavingMechanism rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Scenario rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ScenarioAlteration rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Scene rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Scenery rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ScienceFiction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Scientist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ScoringEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Scout rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ScoutTransport rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Scrap rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Screen rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Script rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Sea rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SeaCreature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SeabaseModule rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Seaman rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SeasonEpisode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SeasonalEvent rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Seating rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Secondary rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SecondaryMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SecondaryObjective rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SecondaryQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SecondaryWeapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SecretLevel rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:SecretPassive rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SecretRoom rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SecurityFeature rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SecurityForce rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SecurityOfficer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Sedan rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Seed rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Seeds rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Sentinel rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Series rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Server rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ServerCommand rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Set rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Settlement rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SettlementUpgrade rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Sharpshooter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Shield rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Shields rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Ship rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ShipEquipment rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ShipUpgrade rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Shipbreaker rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ShootEmUp rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ShootingGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Shop rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ShopQuest rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Shopkeeper rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ShoppingMall rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ShopsAndFacilities rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ShortFilm rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ShortRangeWeapon rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ShortTask rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ShortcutUnlockEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Shotgun rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Show rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:ShowDirector rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Shrine rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SiblingRelationship rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Siblings rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Side rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SideMission rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SidePursuit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SideQuest rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:Sidearm rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Sidequest rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SiegeEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Sigil rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SilverAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SilverTrophy rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Simulation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SimulationGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SimulationSandbox rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SimulationStrategy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Single rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SingleRailCoaster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Site rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Sith rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Skill rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SkillNode rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SkillTree rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Skin rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:SkinIntroduction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Skirmisher rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Skull rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Slime rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Slug rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SmallEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SmallObject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SmithingTech rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SmithyMaterial rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SniperUnit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SoccerTeam rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SocialMediaCompany rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Soggies rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Soldier rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Souvenir rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Sovereign rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SpaceAgency rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpaceFlightSimulation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpaceNavigationSystem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpaceShip rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpaceStation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SpaceVessel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Spacecraft rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Spaceport rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Spaceship rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Spawner rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Special rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecialAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecialArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SpecialCampaign rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SpecialEffectItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SpecialEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecialEvent rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:SpecialForces rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialForcesSoldier rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialGift rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecialInfected rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SpecialItem rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:SpecialLandmark rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SpecialLandmarkBuilding rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SpecialLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecialMachine rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialMove rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialOperationsUnit rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:SpecialPoliceOfficer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpecialTechnique rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Specialist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecializedJob rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpecializedUnit rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Species rdfs:subClassOf fdo:RaceHighLevel .
+
+fdo:Speedster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Spell rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SpellBehavior rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SpellEnhancement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SpellModifier rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Spheromancer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Spider rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Spirit rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Sport rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SportEquipment rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Sports rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SportsCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SportsGame rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SportsSim rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Squadron rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Stable rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Staff rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Stage rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:StageOfGrief rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Stamp rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:StandardQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StarDestroyer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Starfighter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:StartingArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Stat rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StatBoost rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Station rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:StationaryDevice rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Statue rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Status rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:StatusEffect rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StealthAction rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:StealthQuest rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:SteelCoaster rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Sticker rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Storage rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:StorageComponent rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StorageContainer rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:StorageItem rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Store rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Stormtrooper rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:StoryAchievement rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryArc rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:StoryChapter rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryMission rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StoryQuality rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:StorylineElement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StorylineQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Strand rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Stranger rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StrategicCruiser rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Strategy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StrategyGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StrategySimulation rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:StreetGang rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:StrikeCraft rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Striker rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Structure rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Student rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Studio rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Sub rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SubBattlefield rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SubBoss rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:SubClone rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SubEvent rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SubMission rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SubQuest rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:SubordinateFunction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Subquest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SuburbanTown rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Suit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Summon rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SummonUnit rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Summoning rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SuperCarrier rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Superhero rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SupernaturalEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SupplyCache rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SupplyQuest rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SupportAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SupportCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SupportItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SupportPlatform rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:SupportSkillGem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SupportingCharacter rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:SurrealArea rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:SurvivalBattleRoyale rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SurvivalHorror rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Survivor rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Sword rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:SyndicateBuilding rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SynergyQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:System rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:SystemAccessDevice rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:SystemEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TVSeries rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TacticalAbility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TacticalRPG rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:TacticalRolePlayingGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TacticalShield rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TacticalStrategyGame rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TacticalTeamLeader rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Tactics rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Talent rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Tank rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TankDivision rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Task rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TaskAchievement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TaskForce rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Taskmaster rdfs:subClassOf fdo:EvilHighLevel .
+
+fdo:Taunt rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Tavern rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Team rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:TeamScoreMode rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:TeamSport rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Tech rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TechResearch rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:TechUpgrade rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Technique rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TechnologicalItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Technology rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TechnologyFaction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TechnologyItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TeleportationDevice rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TeleportationSkill rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TelevisionEpisode rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Temple rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TempleRitual rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TemporaryEnhancement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Temtem rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Terrain rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TerritorialFaction rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Terrorist rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TerroristReligiousOrganization rdfs:subClassOf fdo:EvilHighLevel .
+
+fdo:Test rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TestVersion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Text rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TextDatapoint rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TextItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TextLog rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TextMail rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TheWilliamsCollection rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TheatricalAdaptation rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Theme rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TheologicalWritings rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ThirdPersonShooter rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Threshold rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ThrillRide rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Throwable rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:ThrowingObject rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Thug rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Tier1Unit rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Tier2Unit rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TimeLimitedEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Timeline rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TimelineEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Titan rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:TitanAbility rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:TitanPrimaryWeapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Tool rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Torch rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TotalConversion rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Tour rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TouringCar rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Tournament rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Tower rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Town rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TownService rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Townhouse rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Townie rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Townsfolk rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Townspeople rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ToxicAbility rdfs:subClassOf fdo:AbilityHighLevel .
+
+fdo:Toy rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Track rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TrackInformation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:TrackRide rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TradeBuilding rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Trader rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TradingCompany rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TrainStation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Training rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TrainingDummy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TrainingFacility rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Transcript rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TransformationBlock rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Transport rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TransportAircraft rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TransportBelt rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TransportFacility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TransportItem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TransportShip rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Transportation rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Trap rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Trapper rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Traveler rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Treasure rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:TreasureCard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TreasureHunt rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Tree rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TreeFruit rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Triad rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Trick rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:TrickeryCard rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Trickster rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Trigger rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TriggerEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TriggerSpell rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TriggeringEvent rdfs:subClassOf fdo:HolidayHighLevel .
+
+fdo:Trinket rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Trophy rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:TrophyAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TrophyChallenge rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TrophyEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Truck rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TurfLeader rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:TurnBasedTactics rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Turret rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Tutorial rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TutorialAchievement rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:TutorialQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Type rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UFO rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Ultimate rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:UndeadEnemy rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnderTheSeaLand rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:UnderworldArmy rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Union rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:UniqueAbility rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UniquePlant rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UniqueTrait rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Unit rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:UnitCard rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:UnitEssence rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:UnitTrainingFacility rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:UnitType rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:UniversityOrganization rdfs:subClassOf fdo:SecretHighLevel .
+
+fdo:Unknown rdfs:subClassOf fdo:FictionalHighLevel .
+
+fdo:UnknownCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnknownEntity rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnknownEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:UnknownItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Unlock rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:UnlockCondition rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:UnlockObjective rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockableCharacter rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockableEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:UnlockableItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockableStructure rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockingChallenge rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnlockingMechanism rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UnofficialEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:UnseenAntagonist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Update rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Upgrade rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:UpgradeComponent rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:UpgradeItem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Upgrades rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:UsableItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Utility rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:UtilityItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:UtilityPerk rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:UtilityTool rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VFXArtist rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VIPVisitor rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Valuable rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:ValuableItem rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Valuables rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Vampire rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Van rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:VanityItem rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:VanitySet rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Variant rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Vegetation rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Vehicle rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:VehicleManufacturer rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:VehicularCombat rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:VendingMachine rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:VenomousCreature rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Version rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VersusMode rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:VideoGameDesigner rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoGameDeveloper rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoGameMusic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoGameProducer rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:VideoGamePublisher rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoGameSoundtrack rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VideoShort rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Vigilante rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Vignette rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Village rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:VillageDevelopmentQuest rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Villager rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Villain rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VillainousFaction rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VirtualServer rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Visionary rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VisorCosmetic rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Visual rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:VisualNovel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Volume rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Wall rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:WallItem rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Wallpaper rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:WanderingNPC rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:War rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:WarMachine rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Warden rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:WarlockCard rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Warlord rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Warrior rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:WarriorTank rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Watercraft rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Waystation rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Weapon rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:WeaponAttachment rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:WeaponEnhancement rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:WeaponMod rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:WeaponModifier rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WeaponPlatform rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:WeaponSkin rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:WeaponSkinBundle rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WeaponSystem rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:WeaponTechnology rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Wearable rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WearableItem rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WeeklySchedule rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Werewolf rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Wheels rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Widget rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:Wielder rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Wilderness rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Wildlife rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Wishstone rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Witch rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WondersOfTheWorld rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WorkProducingMachine rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Worker rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Workshop rdfs:subClassOf fdo:HeroHighLevel .
+
+fdo:Workstation rdfs:subClassOf fdo:EquipableItemHighLevel .
+
+fdo:World rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:WorldArea rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:WorldQuest rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Wraith rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:WraithLair rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:Wrestler rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:XenoTechArtifact rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:Xenos rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:Year rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:YearInGame rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:YoKai rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:Yokai rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ZeeEvent rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:Zone rdfs:subClassOf fdo:RealHighLevel .
+
+fdo:ZooAnimal rdfs:subClassOf fdo:ActionHighLevel .
+
+fdo:ZookeeperAnimal rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:EvilHighLevel rdfs:subClassOf fdo:OrganizationHighLevel .
+
+fdo:AbilityHighLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RaceHighLevel rdfs:subClassOf fdo:LivingBeingHighLevel .
+
+fdo:FictionalHighLevel rdfs:subClassOf fdo:LocationHighLevel .
+
+fdo:HolidayHighLevel rdfs:subClassOf fdo:EventHighLevel .
+
+fdo:SecretHighLevel rdfs:subClassOf fdo:OrganizationHighLevel .
+
+fdo:HeroHighLevel rdfs:subClassOf fdo:OrganizationHighLevel .
+
+fdo:EquipableItemHighLevel rdfs:subClassOf fdo:ObjectHighLevel .
+
+fdo:RealHighLevel rdfs:subClassOf fdo:LocationHighLevel .
 
