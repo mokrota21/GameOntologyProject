@@ -4,3 +4,4 @@ venv/
 .env
 game_classifier_model/
 game_classifier_results/
+*.jsonl
