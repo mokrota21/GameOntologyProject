@@ -1,0 +1,1273 @@
+@prefix fdo: <http://fandom.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+fdo:Action a rdfs:Class .
+
+fdo:Concept a rdfs:Class .
+
+fdo:AIControlUnit rdfs:subClassOf fdo:Real .
+
+fdo:AbilityItem rdfs:subClassOf fdo:Ability .
+
+fdo:AbilityModifier rdfs:subClassOf fdo:Ability .
+
+fdo:AbilityType rdfs:subClassOf fdo:Ability .
+
+fdo:AccountManagement rdfs:subClassOf fdo:Hero .
+
+fdo:AchievementSystem rdfs:subClassOf fdo:Hero .
+
+fdo:Administrator rdfs:subClassOf fdo:Secret .
+
+fdo:AdvancedMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Altar rdfs:subClassOf fdo:Real .
+
+fdo:AmmunitionReserve rdfs:subClassOf fdo:Real .
+
+fdo:Android rdfs:subClassOf fdo:EquipableItem .
+
+fdo:AnimatedEpisode rdfs:subClassOf fdo:Holiday .
+
+fdo:Animus rdfs:subClassOf fdo:EquipableItem .
+
+fdo:AnnouncerPack rdfs:subClassOf fdo:Holiday .
+
+fdo:Apartment rdfs:subClassOf fdo:Real .
+
+fdo:ApartmentBuilding rdfs:subClassOf fdo:Real .
+
+fdo:Apartments rdfs:subClassOf fdo:Real .
+
+fdo:Architect rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Archive rdfs:subClassOf fdo:Secret .
+
+fdo:Area rdfs:subClassOf fdo:Real .
+
+fdo:Arena rdfs:subClassOf fdo:Real .
+
+fdo:Armor rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ArmyDivision rdfs:subClassOf fdo:Hero .
+
+fdo:ArmyGroup rdfs:subClassOf fdo:Secret .
+
+fdo:ArmyUnit rdfs:subClassOf fdo:Hero .
+
+fdo:Artifact rdfs:subClassOf fdo:EquipableItem .
+
+fdo:AssetPack rdfs:subClassOf fdo:EquipableItem .
+
+fdo:AssignmentItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:AudioBroadcast rdfs:subClassOf fdo:Holiday .
+
+fdo:AudioItem rdfs:subClassOf fdo:Holiday .
+
+fdo:AudioShow rdfs:subClassOf fdo:Holiday .
+
+fdo:AugmentingItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BackgroundMusic rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BarnyardAnimal rdfs:subClassOf fdo:Real .
+
+fdo:Base rdfs:subClassOf fdo:Real .
+
+fdo:BaseDefense rdfs:subClassOf fdo:Real .
+
+fdo:Basic rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BasicAbility rdfs:subClassOf fdo:Ability .
+
+fdo:BasicLessons rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Bay rdfs:subClassOf fdo:Real .
+
+fdo:Bayou rdfs:subClassOf fdo:Real .
+
+fdo:Beacon rdfs:subClassOf fdo:Real .
+
+fdo:Beast rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Bed rdfs:subClassOf fdo:Real .
+
+fdo:BinaryPlanet rdfs:subClassOf fdo:Fictional .
+
+fdo:Block rdfs:subClassOf fdo:Real .
+
+fdo:BloodYouth rdfs:subClassOf fdo:Race .
+
+fdo:BondMission rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BooleanOperator rdfs:subClassOf fdo:Evil .
+
+fdo:Boss rdfs:subClassOf fdo:Evil .
+
+fdo:BossCharacter rdfs:subClassOf fdo:Evil .
+
+fdo:BossLevel rdfs:subClassOf fdo:Evil .
+
+fdo:Bot rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BronzeCharacter rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BronzeTrophy rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Buff rdfs:subClassOf fdo:Race .
+
+fdo:Building rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BuildingMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BuildingService rdfs:subClassOf fdo:Hero .
+
+fdo:BuildingStructure rdfs:subClassOf fdo:EquipableItem .
+
+fdo:BuildingTechnology rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Bundle rdfs:subClassOf fdo:Hero .
+
+fdo:Bunker rdfs:subClassOf fdo:Real .
+
+fdo:BurritoStand rdfs:subClassOf fdo:Real .
+
+fdo:Business rdfs:subClassOf fdo:Secret .
+
+fdo:BusinessEntity rdfs:subClassOf fdo:Hero .
+
+fdo:CEO rdfs:subClassOf fdo:Hero .
+
+fdo:Cabin rdfs:subClassOf fdo:Real .
+
+fdo:Cafe rdfs:subClassOf fdo:Real .
+
+fdo:Camp rdfs:subClassOf fdo:Real .
+
+fdo:CampaignMission rdfs:subClassOf fdo:Hero .
+
+fdo:Campfire rdfs:subClassOf fdo:Real .
+
+fdo:CanyonTown rdfs:subClassOf fdo:Real .
+
+fdo:Car rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CardGame rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Cargo rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Cave rdfs:subClassOf fdo:Real .
+
+fdo:Cavern rdfs:subClassOf fdo:Real .
+
+fdo:Celebration rdfs:subClassOf fdo:Holiday .
+
+fdo:Champion rdfs:subClassOf fdo:Race .
+
+fdo:ChemicalElement rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Church rdfs:subClassOf fdo:Real .
+
+fdo:City rdfs:subClassOf fdo:Real .
+
+fdo:CityBuilder rdfs:subClassOf fdo:Real .
+
+fdo:CityPack rdfs:subClassOf fdo:Real .
+
+fdo:CityQuest rdfs:subClassOf fdo:Real .
+
+fdo:CivicDoctrine rdfs:subClassOf fdo:Hero .
+
+fdo:Cleaner rdfs:subClassOf fdo:Hero .
+
+fdo:CloseInWeaponSystem rdfs:subClassOf fdo:Secret .
+
+fdo:Clothing rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Club rdfs:subClassOf fdo:Hero .
+
+fdo:ClubManager rdfs:subClassOf fdo:Secret .
+
+fdo:CoFounder rdfs:subClassOf fdo:Hero .
+
+fdo:CoOpMissionAchievement rdfs:subClassOf fdo:Hero .
+
+fdo:Coach rdfs:subClassOf fdo:Secret .
+
+fdo:CoalitionGovernment rdfs:subClassOf fdo:Hero .
+
+fdo:CodexEntry rdfs:subClassOf fdo:Secret .
+
+fdo:Collectable rdfs:subClassOf fdo:Hero .
+
+fdo:Collectible rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ColonizationTechnology rdfs:subClassOf fdo:Real .
+
+fdo:Commission rdfs:subClassOf fdo:Hero .
+
+fdo:CommonArea rdfs:subClassOf fdo:Real .
+
+fdo:Company rdfs:subClassOf fdo:Hero .
+
+fdo:CompanyBoss rdfs:subClassOf fdo:Hero .
+
+fdo:Compendium rdfs:subClassOf fdo:Hero .
+
+fdo:CompetitiveMode rdfs:subClassOf fdo:Hero .
+
+fdo:CompetitiveTeam rdfs:subClassOf fdo:Hero .
+
+fdo:Conglomerate rdfs:subClassOf fdo:Hero .
+
+fdo:Console rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Construction rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ConstructionMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ConstructionPlatform rdfs:subClassOf fdo:Real .
+
+fdo:ContentAddon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CooldownSystem rdfs:subClassOf fdo:Hero .
+
+fdo:Core rdfs:subClassOf fdo:Hero .
+
+fdo:CoreUpgrade rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Coromon rdfs:subClassOf fdo:Evil .
+
+fdo:Corporation rdfs:subClassOf fdo:Secret .
+
+fdo:CouncilBuilding rdfs:subClassOf fdo:Secret .
+
+fdo:CouncilLeader rdfs:subClassOf fdo:Hero .
+
+fdo:CouncilMember rdfs:subClassOf fdo:Secret .
+
+fdo:Country rdfs:subClassOf fdo:Real .
+
+fdo:CovertOperation rdfs:subClassOf fdo:Secret .
+
+fdo:CraftingEquipment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CraftingItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CraftingMachine rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:CraftingStation rdfs:subClassOf fdo:Real .
+
+fdo:CraftingStationEnhancement rdfs:subClassOf fdo:Real .
+
+fdo:Crater rdfs:subClassOf fdo:Real .
+
+fdo:Crew rdfs:subClassOf fdo:Hero .
+
+fdo:CrewMember rdfs:subClassOf fdo:Hero .
+
+fdo:CrewResidence rdfs:subClassOf fdo:Real .
+
+fdo:CustomRoshan rdfs:subClassOf fdo:Real .
+
+fdo:DLC rdfs:subClassOf fdo:Real .
+
+fdo:DLCCharacter rdfs:subClassOf fdo:Real .
+
+fdo:DLCPack rdfs:subClassOf fdo:Real .
+
+fdo:DLCPrison rdfs:subClassOf fdo:Real .
+
+fdo:DLCQuest rdfs:subClassOf fdo:Real .
+
+fdo:DamageInflictingTool rdfs:subClassOf fdo:EquipableItem .
+
+fdo:DataDrive rdfs:subClassOf fdo:EquipableItem .
+
+fdo:DataHub rdfs:subClassOf fdo:Real .
+
+fdo:DataPoint rdfs:subClassOf fdo:Real .
+
+fdo:DayQuest rdfs:subClassOf fdo:Real .
+
+fdo:DeathWishMission rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Decade rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Deck rdfs:subClassOf fdo:Secret .
+
+fdo:Deckbuilder rdfs:subClassOf fdo:Hero .
+
+fdo:DefenseStructure rdfs:subClassOf fdo:Secret .
+
+fdo:DefenseTechnology rdfs:subClassOf fdo:EquipableItem .
+
+fdo:DefensiveStructure rdfs:subClassOf fdo:Secret .
+
+fdo:Department rdfs:subClassOf fdo:Secret .
+
+fdo:Device rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Diagnosis rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Dinosaur rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Director rdfs:subClassOf fdo:Hero .
+
+fdo:Dish rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Disk rdfs:subClassOf fdo:EquipableItem .
+
+fdo:District rdfs:subClassOf fdo:Real .
+
+fdo:Doctrine rdfs:subClassOf fdo:Secret .
+
+fdo:Document rdfs:subClassOf fdo:EquipableItem .
+
+fdo:DojoMission rdfs:subClassOf fdo:Secret .
+
+fdo:Dome rdfs:subClassOf fdo:Real .
+
+fdo:DomeService rdfs:subClassOf fdo:Real .
+
+fdo:DomeServices rdfs:subClassOf fdo:Real .
+
+fdo:DoomEngineMod rdfs:subClassOf fdo:EquipableItem .
+
+fdo:DormApartment rdfs:subClassOf fdo:Real .
+
+fdo:DownloadableContent rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Drug rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Dungeon rdfs:subClassOf fdo:Fictional .
+
+fdo:DungeonArea rdfs:subClassOf fdo:Real .
+
+fdo:Dye rdfs:subClassOf fdo:EquipableItem .
+
+fdo:EcologistFaction rdfs:subClassOf fdo:Secret .
+
+fdo:EconomicStructure rdfs:subClassOf fdo:Hero .
+
+fdo:Effect rdfs:subClassOf fdo:Holiday .
+
+fdo:EffectModifier rdfs:subClassOf fdo:Holiday .
+
+fdo:ElementalAbility rdfs:subClassOf fdo:Ability .
+
+fdo:ElementalBoss rdfs:subClassOf fdo:Evil .
+
+fdo:Emote rdfs:subClassOf fdo:Holiday .
+
+fdo:Ending rdfs:subClassOf fdo:Holiday .
+
+fdo:EnergyWeapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Environment rdfs:subClassOf fdo:Real .
+
+fdo:EnvironmentCommand rdfs:subClassOf fdo:Real .
+
+fdo:Equipment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:EscapeTeamDLCItem rdfs:subClassOf fdo:Real .
+
+fdo:EventVenue rdfs:subClassOf fdo:Real .
+
+fdo:Evidence rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Executive rdfs:subClassOf fdo:Hero .
+
+fdo:ExiledDragoon rdfs:subClassOf fdo:Real .
+
+fdo:ExplorationQuest rdfs:subClassOf fdo:Real .
+
+fdo:Exterior rdfs:subClassOf fdo:Real .
+
+fdo:Extractor rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Facility rdfs:subClassOf fdo:Hero .
+
+fdo:FacilityModification rdfs:subClassOf fdo:Hero .
+
+fdo:Faction rdfs:subClassOf fdo:Secret .
+
+fdo:Factory rdfs:subClassOf fdo:Hero .
+
+fdo:Familiar rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Farm rdfs:subClassOf fdo:Real .
+
+fdo:FarsideAnalysis rdfs:subClassOf fdo:Fictional .
+
+fdo:Fauna rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Feat rdfs:subClassOf fdo:EquipableItem .
+
+fdo:FictionalCorporation rdfs:subClassOf fdo:Secret .
+
+fdo:FieldTile rdfs:subClassOf fdo:Real .
+
+fdo:FieldTool rdfs:subClassOf fdo:EquipableItem .
+
+fdo:FinalBoss rdfs:subClassOf fdo:Evil .
+
+fdo:Flooring rdfs:subClassOf fdo:EquipableItem .
+
+fdo:FlooringWalls rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Food rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ForcesOfNature rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ForegroundSpray rdfs:subClassOf fdo:Real .
+
+fdo:FragilePosition rdfs:subClassOf fdo:Fictional .
+
+fdo:Furniture rdfs:subClassOf fdo:EquipableItem .
+
+fdo:FurnitureItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:FurnitureWallDecoration rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Gadget rdfs:subClassOf fdo:EquipableItem .
+
+fdo:GameAbility rdfs:subClassOf fdo:Ability .
+
+fdo:GameConsole rdfs:subClassOf fdo:EquipableItem .
+
+fdo:GameLocation rdfs:subClassOf fdo:Real .
+
+fdo:GameObjective rdfs:subClassOf fdo:Ability .
+
+fdo:Garage rdfs:subClassOf fdo:Real .
+
+fdo:Garden rdfs:subClassOf fdo:Real .
+
+fdo:Gear rdfs:subClassOf fdo:Hero .
+
+fdo:Gemstone rdfs:subClassOf fdo:EquipableItem .
+
+fdo:GeographicalArea rdfs:subClassOf fdo:Real .
+
+fdo:Gloves rdfs:subClassOf fdo:EquipableItem .
+
+fdo:GoldTrophy rdfs:subClassOf fdo:EquipableItem .
+
+fdo:GoverningBody rdfs:subClassOf fdo:Hero .
+
+fdo:Grindstone rdfs:subClassOf fdo:Real .
+
+fdo:Ground rdfs:subClassOf fdo:Real .
+
+fdo:GroundTypePokemon rdfs:subClassOf fdo:Real .
+
+fdo:Group rdfs:subClassOf fdo:Secret .
+
+fdo:Guide rdfs:subClassOf fdo:Real .
+
+fdo:Gym rdfs:subClassOf fdo:EquipableItem .
+
+fdo:HandheldConsole rdfs:subClassOf fdo:EquipableItem .
+
+fdo:HandheldGameConsole rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Harbour rdfs:subClassOf fdo:Real .
+
+fdo:Hardware rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Hat rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Hazard rdfs:subClassOf fdo:Real .
+
+fdo:HeavyDefense rdfs:subClassOf fdo:EquipableItem .
+
+fdo:HeavyWeapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:HeldItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Hex rdfs:subClassOf fdo:Fictional .
+
+fdo:HexArea rdfs:subClassOf fdo:Real .
+
+fdo:HiddenBase rdfs:subClassOf fdo:Fictional .
+
+fdo:HiddenLevel rdfs:subClassOf fdo:Fictional .
+
+fdo:HiddenQuest rdfs:subClassOf fdo:Fictional .
+
+fdo:HiddenRealm rdfs:subClassOf fdo:Fictional .
+
+fdo:HiddenTrophy rdfs:subClassOf fdo:Fictional .
+
+fdo:Hideout rdfs:subClassOf fdo:Real .
+
+fdo:HidingPlace rdfs:subClassOf fdo:Fictional .
+
+fdo:HolographicQuest rdfs:subClassOf fdo:EquipableItem .
+
+fdo:HomeType rdfs:subClassOf fdo:Real .
+
+fdo:House rdfs:subClassOf fdo:Real .
+
+fdo:Houseware rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Housing rdfs:subClassOf fdo:Real .
+
+fdo:HumanMandragora rdfs:subClassOf fdo:Race .
+
+fdo:HumanMutant rdfs:subClassOf fdo:Race .
+
+fdo:Humanoid rdfs:subClassOf fdo:Race .
+
+fdo:ImmobileRangedTroop rdfs:subClassOf fdo:Real .
+
+fdo:IndoorArea rdfs:subClassOf fdo:Real .
+
+fdo:IndustrialArea rdfs:subClassOf fdo:Real .
+
+fdo:Infrastructure rdfs:subClassOf fdo:EquipableItem .
+
+fdo:IngredientProvider rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Injectable rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Insect rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Inserter rdfs:subClassOf fdo:Real .
+
+fdo:Installment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Instrument rdfs:subClassOf fdo:EquipableItem .
+
+fdo:InteractiveArea rdfs:subClassOf fdo:Real .
+
+fdo:InteractiveObject rdfs:subClassOf fdo:EquipableItem .
+
+fdo:IntergovernmentalMilitaryAlliance rdfs:subClassOf fdo:Hero .
+
+fdo:IntermediateItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:InventoryItem rdfs:subClassOf fdo:Hero .
+
+fdo:Island rdfs:subClassOf fdo:Real .
+
+fdo:Item rdfs:subClassOf fdo:Holiday .
+
+fdo:Jewellery rdfs:subClassOf fdo:EquipableItem .
+
+fdo:KeyQuest rdfs:subClassOf fdo:Real .
+
+fdo:Knight rdfs:subClassOf fdo:Race .
+
+fdo:Lamp rdfs:subClassOf fdo:Real .
+
+fdo:Landmark rdfs:subClassOf fdo:Real .
+
+fdo:Landmine rdfs:subClassOf fdo:Real .
+
+fdo:Landscape rdfs:subClassOf fdo:Real .
+
+fdo:Language rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Leader rdfs:subClassOf fdo:Hero .
+
+fdo:Leadership rdfs:subClassOf fdo:Hero .
+
+fdo:Level rdfs:subClassOf fdo:Real .
+
+fdo:LevelMission rdfs:subClassOf fdo:Real .
+
+fdo:Lighthouse rdfs:subClassOf fdo:Real .
+
+fdo:LimitedTimeEvent rdfs:subClassOf fdo:Holiday .
+
+fdo:LivingQuarters rdfs:subClassOf fdo:Real .
+
+fdo:Locomotive rdfs:subClassOf fdo:Real .
+
+fdo:LongBlock rdfs:subClassOf fdo:Real .
+
+fdo:Lore rdfs:subClassOf fdo:Real .
+
+fdo:LoreDocument rdfs:subClassOf fdo:Real .
+
+fdo:LoreEvent rdfs:subClassOf fdo:Holiday .
+
+fdo:LoreItem rdfs:subClassOf fdo:Real .
+
+fdo:Machine rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MagicAbility rdfs:subClassOf fdo:Ability .
+
+fdo:MagicalRealm rdfs:subClassOf fdo:Real .
+
+fdo:Main rdfs:subClassOf fdo:Real .
+
+fdo:MainHub rdfs:subClassOf fdo:Real .
+
+fdo:Mainframe rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MainframeBranch rdfs:subClassOf fdo:Real .
+
+fdo:MaintenanceRequest rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MaleCharacter rdfs:subClassOf fdo:Race .
+
+fdo:ManagementSim rdfs:subClassOf fdo:Secret .
+
+fdo:ManagementTacticalCombat rdfs:subClassOf fdo:Hero .
+
+fdo:Map rdfs:subClassOf fdo:Real .
+
+fdo:MasterRelayer rdfs:subClassOf fdo:Real .
+
+fdo:Material rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Maze rdfs:subClassOf fdo:Real .
+
+fdo:Mech rdfs:subClassOf fdo:Hero .
+
+fdo:Mecha rdfs:subClassOf fdo:Hero .
+
+fdo:Mechanical rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MechanicalDevice rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MechanicalItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Mechanism rdfs:subClassOf fdo:Hero .
+
+fdo:MedicalEquipment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MediumBoss rdfs:subClassOf fdo:Hero .
+
+fdo:Memento rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Memory rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MentionedOnlyLocation rdfs:subClassOf fdo:Real .
+
+fdo:Mercenary rdfs:subClassOf fdo:Race .
+
+fdo:MercenaryCompany rdfs:subClassOf fdo:Hero .
+
+fdo:Metal rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MetroArea rdfs:subClassOf fdo:Real .
+
+fdo:MilitaryArea rdfs:subClassOf fdo:Real .
+
+fdo:MilitaryBuilding rdfs:subClassOf fdo:Real .
+
+fdo:MilitaryDivision rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryFormation rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryGroup rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryOperation rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryOrganization rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryStructure rdfs:subClassOf fdo:Secret .
+
+fdo:MilitaryTrainingGroup rdfs:subClassOf fdo:Hero .
+
+fdo:MilitaryUnit rdfs:subClassOf fdo:Hero .
+
+fdo:Mimic rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Miner rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MiningTechnology rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MissionArea rdfs:subClassOf fdo:Real .
+
+fdo:Mob rdfs:subClassOf fdo:Hero .
+
+fdo:MobileCastle rdfs:subClassOf fdo:Real .
+
+fdo:Mode rdfs:subClassOf fdo:Hero .
+
+fdo:Module rdfs:subClassOf fdo:Hero .
+
+fdo:Mook rdfs:subClassOf fdo:Fictional .
+
+fdo:Mount rdfs:subClassOf fdo:Real .
+
+fdo:MovementOperator rdfs:subClassOf fdo:Hero .
+
+fdo:Movie rdfs:subClassOf fdo:Holiday .
+
+fdo:Munition rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MunitionsUnit rdfs:subClassOf fdo:Hero .
+
+fdo:Music rdfs:subClassOf fdo:Holiday .
+
+fdo:MusicCollection rdfs:subClassOf fdo:EquipableItem .
+
+fdo:MusicItem rdfs:subClassOf fdo:Holiday .
+
+fdo:Mutant rdfs:subClassOf fdo:Race .
+
+fdo:NPC rdfs:subClassOf fdo:Hero .
+
+fdo:Narrative rdfs:subClassOf fdo:Holiday .
+
+fdo:NaturalResource rdfs:subClassOf fdo:Real .
+
+fdo:NatureClubItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Neighborhood rdfs:subClassOf fdo:Real .
+
+fdo:NetworkNode rdfs:subClassOf fdo:Real .
+
+fdo:NightSprings rdfs:subClassOf fdo:Real .
+
+fdo:Nightclub rdfs:subClassOf fdo:Real .
+
+fdo:NobleGas rdfs:subClassOf fdo:EquipableItem .
+
+fdo:NobleHouse rdfs:subClassOf fdo:Real .
+
+fdo:Node rdfs:subClassOf fdo:Real .
+
+fdo:NormalAbility rdfs:subClassOf fdo:Ability .
+
+fdo:NoticeBoardQuest rdfs:subClassOf fdo:Secret .
+
+fdo:Nursery rdfs:subClassOf fdo:Real .
+
+fdo:Oasis rdfs:subClassOf fdo:Real .
+
+fdo:Office rdfs:subClassOf fdo:Secret .
+
+fdo:OnlineArea rdfs:subClassOf fdo:Real .
+
+fdo:Operation rdfs:subClassOf fdo:Secret .
+
+fdo:Operator rdfs:subClassOf fdo:Hero .
+
+fdo:Order rdfs:subClassOf fdo:Hero .
+
+fdo:Organic rdfs:subClassOf fdo:Hero .
+
+fdo:Origin rdfs:subClassOf fdo:Real .
+
+fdo:OriginalSoundtrack rdfs:subClassOf fdo:Holiday .
+
+fdo:Outfit rdfs:subClassOf fdo:Hero .
+
+fdo:OverworldArea rdfs:subClassOf fdo:Real .
+
+fdo:OzKit rdfs:subClassOf fdo:Hero .
+
+fdo:Pack rdfs:subClassOf fdo:Secret .
+
+fdo:Painting rdfs:subClassOf fdo:EquipableItem .
+
+fdo:PartyTrinket rdfs:subClassOf fdo:Holiday .
+
+fdo:Passenger rdfs:subClassOf fdo:Real .
+
+fdo:Passive rdfs:subClassOf fdo:Fictional .
+
+fdo:PassiveCollectible rdfs:subClassOf fdo:Secret .
+
+fdo:PatchNotes rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Photo rdfs:subClassOf fdo:Real .
+
+fdo:PhysicalAbility rdfs:subClassOf fdo:Ability .
+
+fdo:Planet rdfs:subClassOf fdo:Real .
+
+fdo:Platform rdfs:subClassOf fdo:Real .
+
+fdo:Podcast rdfs:subClassOf fdo:EquipableItem .
+
+fdo:PoliticalCompany rdfs:subClassOf fdo:Evil .
+
+fdo:PreOrderQuest rdfs:subClassOf fdo:Secret .
+
+fdo:Prison rdfs:subClassOf fdo:Real .
+
+fdo:PrisonCell rdfs:subClassOf fdo:Real .
+
+fdo:PrivateCorporation rdfs:subClassOf fdo:Secret .
+
+fdo:PrivateSecurity rdfs:subClassOf fdo:Real .
+
+fdo:ProcessingMachine rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Production rdfs:subClassOf fdo:Hero .
+
+fdo:ProductionBuilding rdfs:subClassOf fdo:Hero .
+
+fdo:ProductionFacility rdfs:subClassOf fdo:Hero .
+
+fdo:ProfileIcon rdfs:subClassOf fdo:Real .
+
+fdo:Project rdfs:subClassOf fdo:Secret .
+
+fdo:ProjectPart rdfs:subClassOf fdo:Secret .
+
+fdo:Projectile rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Protagonist rdfs:subClassOf fdo:Race .
+
+fdo:ProvingGroundProject rdfs:subClassOf fdo:Real .
+
+fdo:PuzzlePlatform rdfs:subClassOf fdo:Real .
+
+fdo:PuzzleRoom rdfs:subClassOf fdo:Real .
+
+fdo:PyromancerSkill rdfs:subClassOf fdo:Ability .
+
+fdo:Pyromancy rdfs:subClassOf fdo:EquipableItem .
+
+fdo:QALead rdfs:subClassOf fdo:Race .
+
+fdo:RPG rdfs:subClassOf fdo:EquipableItem .
+
+fdo:RangedCavalry rdfs:subClassOf fdo:EquipableItem .
+
+fdo:RangedWeapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:RareCollectible rdfs:subClassOf fdo:Holiday .
+
+fdo:RawMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Realm rdfs:subClassOf fdo:Real .
+
+fdo:Record rdfs:subClassOf fdo:Holiday .
+
+fdo:Recording rdfs:subClassOf fdo:Holiday .
+
+fdo:RefinedCraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Region rdfs:subClassOf fdo:Real .
+
+fdo:RegionCity rdfs:subClassOf fdo:Real .
+
+fdo:Relay rdfs:subClassOf fdo:Real .
+
+fdo:Relic rdfs:subClassOf fdo:Real .
+
+fdo:RelicCraftingMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ReligiousOrganization rdfs:subClassOf fdo:Secret .
+
+fdo:Reptile rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Republic rdfs:subClassOf fdo:Hero .
+
+fdo:Research rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ResearchCentre rdfs:subClassOf fdo:Real .
+
+fdo:ResearchFacility rdfs:subClassOf fdo:Real .
+
+fdo:ResearchProject rdfs:subClassOf fdo:Secret .
+
+fdo:ResearchRecordsReports rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ResearchTechnology rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Residential rdfs:subClassOf fdo:Real .
+
+fdo:ResidentialHome rdfs:subClassOf fdo:Real .
+
+fdo:ResidentialStructure rdfs:subClassOf fdo:Real .
+
+fdo:Resource rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ResourceArea rdfs:subClassOf fdo:Real .
+
+fdo:ResourceBuilding rdfs:subClassOf fdo:Real .
+
+fdo:ResourceCollector rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ResourceGatheringBuilding rdfs:subClassOf fdo:Hero .
+
+fdo:ResourceManagement rdfs:subClassOf fdo:Hero .
+
+fdo:ResourceProduction rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ResourceProductionSite rdfs:subClassOf fdo:Real .
+
+fdo:Restaurant rdfs:subClassOf fdo:Real .
+
+fdo:Road rdfs:subClassOf fdo:Real .
+
+fdo:Roadside rdfs:subClassOf fdo:Real .
+
+fdo:Roguelite rdfs:subClassOf fdo:Real .
+
+fdo:Room rdfs:subClassOf fdo:Real .
+
+fdo:Rug rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Ruins rdfs:subClassOf fdo:Real .
+
+fdo:Ruler rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Rundown rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Rune rdfs:subClassOf fdo:Real .
+
+fdo:Runestone rdfs:subClassOf fdo:Real .
+
+fdo:SQUID rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SavePoint rdfs:subClassOf fdo:Real .
+
+fdo:Scenario rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Scene rdfs:subClassOf fdo:Real .
+
+fdo:Scenery rdfs:subClassOf fdo:Real .
+
+fdo:Scout rdfs:subClassOf fdo:Real .
+
+fdo:SeabaseModule rdfs:subClassOf fdo:Real .
+
+fdo:SeasonalEvent rdfs:subClassOf fdo:Holiday .
+
+fdo:Seating rdfs:subClassOf fdo:Real .
+
+fdo:Secondary rdfs:subClassOf fdo:Real .
+
+fdo:SecondaryWeapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SecretLevel rdfs:subClassOf fdo:Fictional .
+
+fdo:SecretRoom rdfs:subClassOf fdo:Real .
+
+fdo:Sedan rdfs:subClassOf fdo:Real .
+
+fdo:Sentinel rdfs:subClassOf fdo:Real .
+
+fdo:Server rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Settlement rdfs:subClassOf fdo:Real .
+
+fdo:SettlementUpgrade rdfs:subClassOf fdo:Real .
+
+fdo:Shields rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Ship rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ShipEquipment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ShoppingMall rdfs:subClassOf fdo:Real .
+
+fdo:ShopsAndFacilities rdfs:subClassOf fdo:Real .
+
+fdo:ShortFilm rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Show rdfs:subClassOf fdo:Holiday .
+
+fdo:Shrine rdfs:subClassOf fdo:Real .
+
+fdo:Side rdfs:subClassOf fdo:Real .
+
+fdo:SideQuest rdfs:subClassOf fdo:Fictional .
+
+fdo:Sidequest rdfs:subClassOf fdo:Real .
+
+fdo:Sigil rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SilverTrophy rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Site rdfs:subClassOf fdo:Real .
+
+fdo:Skin rdfs:subClassOf fdo:Race .
+
+fdo:Skull rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Slime rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SmithyMaterial rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SocialMediaCompany rdfs:subClassOf fdo:Hero .
+
+fdo:Soggies rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Souvenir rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SpaceStation rdfs:subClassOf fdo:Real .
+
+fdo:Spacecraft rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Spaceport rdfs:subClassOf fdo:Real .
+
+fdo:SpecialArea rdfs:subClassOf fdo:Real .
+
+fdo:SpecialEvent rdfs:subClassOf fdo:Holiday .
+
+fdo:SpecialItem rdfs:subClassOf fdo:Holiday .
+
+fdo:SpecialOperationsUnit rdfs:subClassOf fdo:Secret .
+
+fdo:SpecializedUnit rdfs:subClassOf fdo:Secret .
+
+fdo:Species rdfs:subClassOf fdo:Race .
+
+fdo:Squadron rdfs:subClassOf fdo:Hero .
+
+fdo:Staff rdfs:subClassOf fdo:Secret .
+
+fdo:Stage rdfs:subClassOf fdo:Real .
+
+fdo:StageOfGrief rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Stamp rdfs:subClassOf fdo:EquipableItem .
+
+fdo:StartingArea rdfs:subClassOf fdo:Real .
+
+fdo:Station rdfs:subClassOf fdo:Real .
+
+fdo:StationaryDevice rdfs:subClassOf fdo:Real .
+
+fdo:Statue rdfs:subClassOf fdo:EquipableItem .
+
+fdo:StealthQuest rdfs:subClassOf fdo:Fictional .
+
+fdo:Sticker rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Storage rdfs:subClassOf fdo:Real .
+
+fdo:StorageContainer rdfs:subClassOf fdo:Secret .
+
+fdo:StorageItem rdfs:subClassOf fdo:Real .
+
+fdo:Store rdfs:subClassOf fdo:Real .
+
+fdo:StoryArea rdfs:subClassOf fdo:Real .
+
+fdo:Strand rdfs:subClassOf fdo:Real .
+
+fdo:StreetGang rdfs:subClassOf fdo:Real .
+
+fdo:Structure rdfs:subClassOf fdo:Hero .
+
+fdo:Studio rdfs:subClassOf fdo:Real .
+
+fdo:SubBattlefield rdfs:subClassOf fdo:Real .
+
+fdo:SubBoss rdfs:subClassOf fdo:Secret .
+
+fdo:SubQuest rdfs:subClassOf fdo:Real .
+
+fdo:SuburbanTown rdfs:subClassOf fdo:Real .
+
+fdo:SummonUnit rdfs:subClassOf fdo:Real .
+
+fdo:SupplyQuest rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SupportItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SupportSkillGem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:SurrealArea rdfs:subClassOf fdo:Fictional .
+
+fdo:Sword rdfs:subClassOf fdo:EquipableItem .
+
+fdo:System rdfs:subClassOf fdo:Hero .
+
+fdo:TacticalRPG rdfs:subClassOf fdo:EquipableItem .
+
+fdo:TacticalTeamLeader rdfs:subClassOf fdo:Hero .
+
+fdo:Tactics rdfs:subClassOf fdo:EquipableItem .
+
+fdo:TaskForce rdfs:subClassOf fdo:Secret .
+
+fdo:Taskmaster rdfs:subClassOf fdo:Evil .
+
+fdo:Tavern rdfs:subClassOf fdo:Real .
+
+fdo:Team rdfs:subClassOf fdo:Secret .
+
+fdo:TeamScoreMode rdfs:subClassOf fdo:Hero .
+
+fdo:TechResearch rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Temple rdfs:subClassOf fdo:Real .
+
+fdo:TempleRitual rdfs:subClassOf fdo:Real .
+
+fdo:Temtem rdfs:subClassOf fdo:Real .
+
+fdo:Terrain rdfs:subClassOf fdo:Real .
+
+fdo:TerritorialFaction rdfs:subClassOf fdo:Real .
+
+fdo:TerroristReligiousOrganization rdfs:subClassOf fdo:Evil .
+
+fdo:TheWilliamsCollection rdfs:subClassOf fdo:Real .
+
+fdo:TheologicalWritings rdfs:subClassOf fdo:EquipableItem .
+
+fdo:TitanPrimaryWeapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Tool rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Tour rdfs:subClassOf fdo:Real .
+
+fdo:Tower rdfs:subClassOf fdo:Real .
+
+fdo:Town rdfs:subClassOf fdo:Real .
+
+fdo:TownService rdfs:subClassOf fdo:Real .
+
+fdo:Townhouse rdfs:subClassOf fdo:Real .
+
+fdo:Townie rdfs:subClassOf fdo:Real .
+
+fdo:Townsfolk rdfs:subClassOf fdo:Real .
+
+fdo:Townspeople rdfs:subClassOf fdo:Real .
+
+fdo:ToxicAbility rdfs:subClassOf fdo:Ability .
+
+fdo:Toy rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Track rdfs:subClassOf fdo:Real .
+
+fdo:TrackInformation rdfs:subClassOf fdo:Real .
+
+fdo:TrainStation rdfs:subClassOf fdo:Real .
+
+fdo:TrainingFacility rdfs:subClassOf fdo:Hero .
+
+fdo:Trapper rdfs:subClassOf fdo:Real .
+
+fdo:Traveler rdfs:subClassOf fdo:Real .
+
+fdo:Treasure rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Trick rdfs:subClassOf fdo:EquipableItem .
+
+fdo:TrickeryCard rdfs:subClassOf fdo:EquipableItem .
+
+fdo:TriggeringEvent rdfs:subClassOf fdo:Holiday .
+
+fdo:Trinket rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Turret rdfs:subClassOf fdo:Real .
+
+fdo:UFO rdfs:subClassOf fdo:EquipableItem .
+
+fdo:UnderTheSeaLand rdfs:subClassOf fdo:Real .
+
+fdo:Union rdfs:subClassOf fdo:Hero .
+
+fdo:Unit rdfs:subClassOf fdo:Real .
+
+fdo:UnitCard rdfs:subClassOf fdo:Real .
+
+fdo:UnitTrainingFacility rdfs:subClassOf fdo:Real .
+
+fdo:UnitType rdfs:subClassOf fdo:Real .
+
+fdo:UniversityOrganization rdfs:subClassOf fdo:Secret .
+
+fdo:Unknown rdfs:subClassOf fdo:Fictional .
+
+fdo:UpgradeComponent rdfs:subClassOf fdo:EquipableItem .
+
+fdo:UsableItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Valuable rdfs:subClassOf fdo:EquipableItem .
+
+fdo:ValuableItem rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Valuables rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Vegetation rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Vehicle rdfs:subClassOf fdo:EquipableItem .
+
+fdo:VehicleManufacturer rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Village rdfs:subClassOf fdo:Real .
+
+fdo:Wall rdfs:subClassOf fdo:Real .
+
+fdo:WallItem rdfs:subClassOf fdo:Real .
+
+fdo:Wallpaper rdfs:subClassOf fdo:EquipableItem .
+
+fdo:WanderingNPC rdfs:subClassOf fdo:Real .
+
+fdo:Warden rdfs:subClassOf fdo:Real .
+
+fdo:Waystation rdfs:subClassOf fdo:Real .
+
+fdo:Weapon rdfs:subClassOf fdo:EquipableItem .
+
+fdo:WeaponAttachment rdfs:subClassOf fdo:EquipableItem .
+
+fdo:WeaponPlatform rdfs:subClassOf fdo:Real .
+
+fdo:WeaponSkin rdfs:subClassOf fdo:EquipableItem .
+
+fdo:WeaponTechnology rdfs:subClassOf fdo:EquipableItem .
+
+fdo:WeeklySchedule rdfs:subClassOf fdo:Hero .
+
+fdo:Widget rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Wielder rdfs:subClassOf fdo:Hero .
+
+fdo:Wilderness rdfs:subClassOf fdo:Real .
+
+fdo:Wishstone rdfs:subClassOf fdo:Real .
+
+fdo:WorkProducingMachine rdfs:subClassOf fdo:Hero .
+
+fdo:Workshop rdfs:subClassOf fdo:Hero .
+
+fdo:Workstation rdfs:subClassOf fdo:EquipableItem .
+
+fdo:World rdfs:subClassOf fdo:Real .
+
+fdo:WorldArea rdfs:subClassOf fdo:Real .
+
+fdo:WorldQuest rdfs:subClassOf fdo:Real .
+
+fdo:WraithLair rdfs:subClassOf fdo:Real .
+
+fdo:Zone rdfs:subClassOf fdo:Real .
+
+fdo:Location rdfs:subClassOf fdo:Real .
+
+fdo:Object rdfs:subClassOf fdo:EquipableItem .
+
+fdo:Organization rdfs:subClassOf fdo:Hero .
+
+fdo:Evil rdfs:subClassOf fdo:Organization .
+
+fdo:Ability rdfs:subClassOf fdo:Object .
+
+fdo:Race rdfs:subClassOf fdo:Living_Being .
+
+fdo:Fictional rdfs:subClassOf fdo:Location .
+
+fdo:Holiday rdfs:subClassOf fdo:Event .
+
+fdo:Secret rdfs:subClassOf fdo:Organization .
+
+fdo:Hero rdfs:subClassOf fdo:Organization .
+
+fdo:EquipableItem rdfs:subClassOf fdo:Object .
+
+fdo:Real rdfs:subClassOf fdo:Location .
+
