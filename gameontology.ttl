@@ -1,0 +1,2649 @@
+@prefix : <http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5/> .
+
+<http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5> rdf:type owl:Ontology ;
+                                                                            owl:imports <file:/C:/knowledge&data/Project/fandom_classes.ttl> ,
+                                                                                        <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#hasThing
+:hasThing rdf:type owl:ObjectProperty ,
+                   owl:IrreflexiveProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#raceCount
+:raceCount rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game> ;
+           rdfs:range xsd:unsignedInt .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://fandom.com/ontology/AIControlUnit
+<http://fandom.com/ontology/AIControlUnit> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/AbilityItem
+<http://fandom.com/ontology/AbilityItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AbilityModifier
+<http://fandom.com/ontology/AbilityModifier> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AbilityType
+<http://fandom.com/ontology/AbilityType> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AccountManagement
+<http://fandom.com/ontology/AccountManagement> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/AchievementSystem
+<http://fandom.com/ontology/AchievementSystem> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Administrator
+<http://fandom.com/ontology/Administrator> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/AdvancedMaterial
+<http://fandom.com/ontology/AdvancedMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Altar
+<http://fandom.com/ontology/Altar> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/AmmunitionReserve
+<http://fandom.com/ontology/AmmunitionReserve> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Android
+<http://fandom.com/ontology/Android> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AnimatedEpisode
+<http://fandom.com/ontology/AnimatedEpisode> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Animus
+<http://fandom.com/ontology/Animus> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AnnouncerPack
+<http://fandom.com/ontology/AnnouncerPack> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Apartment
+<http://fandom.com/ontology/Apartment> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ApartmentBuilding
+<http://fandom.com/ontology/ApartmentBuilding> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Apartments
+<http://fandom.com/ontology/Apartments> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Architect
+<http://fandom.com/ontology/Architect> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Archive
+<http://fandom.com/ontology/Archive> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Area
+<http://fandom.com/ontology/Area> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Arena
+<http://fandom.com/ontology/Arena> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Armor
+<http://fandom.com/ontology/Armor> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ArmyDivision
+<http://fandom.com/ontology/ArmyDivision> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ArmyGroup
+<http://fandom.com/ontology/ArmyGroup> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ArmyUnit
+<http://fandom.com/ontology/ArmyUnit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Artifact
+<http://fandom.com/ontology/Artifact> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AssetPack
+<http://fandom.com/ontology/AssetPack> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AssignmentItem
+<http://fandom.com/ontology/AssignmentItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/AudioBroadcast
+<http://fandom.com/ontology/AudioBroadcast> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/AudioItem
+<http://fandom.com/ontology/AudioItem> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/AudioShow
+<http://fandom.com/ontology/AudioShow> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/AugmentingItem
+<http://fandom.com/ontology/AugmentingItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BackgroundMusic
+<http://fandom.com/ontology/BackgroundMusic> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BarnyardAnimal
+<http://fandom.com/ontology/BarnyardAnimal> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Base
+<http://fandom.com/ontology/Base> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/BaseDefense
+<http://fandom.com/ontology/BaseDefense> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Basic
+<http://fandom.com/ontology/Basic> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BasicAbility
+<http://fandom.com/ontology/BasicAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BasicLessons
+<http://fandom.com/ontology/BasicLessons> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Bay
+<http://fandom.com/ontology/Bay> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Bayou
+<http://fandom.com/ontology/Bayou> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Beacon
+<http://fandom.com/ontology/Beacon> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Beast
+<http://fandom.com/ontology/Beast> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Bed
+<http://fandom.com/ontology/Bed> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/BinaryPlanet
+<http://fandom.com/ontology/BinaryPlanet> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Block
+<http://fandom.com/ontology/Block> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/BloodYouth
+<http://fandom.com/ontology/BloodYouth> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/BondMission
+<http://fandom.com/ontology/BondMission> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BooleanOperator
+<http://fandom.com/ontology/BooleanOperator> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Boss
+<http://fandom.com/ontology/Boss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/BossCharacter
+<http://fandom.com/ontology/BossCharacter> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/BossLevel
+<http://fandom.com/ontology/BossLevel> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Bot
+<http://fandom.com/ontology/Bot> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BronzeCharacter
+<http://fandom.com/ontology/BronzeCharacter> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BronzeTrophy
+<http://fandom.com/ontology/BronzeTrophy> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Buff
+<http://fandom.com/ontology/Buff> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/Building
+<http://fandom.com/ontology/Building> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BuildingMaterial
+<http://fandom.com/ontology/BuildingMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BuildingService
+<http://fandom.com/ontology/BuildingService> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/BuildingStructure
+<http://fandom.com/ontology/BuildingStructure> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/BuildingTechnology
+<http://fandom.com/ontology/BuildingTechnology> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Bundle
+<http://fandom.com/ontology/Bundle> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Bunker
+<http://fandom.com/ontology/Bunker> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/BurritoStand
+<http://fandom.com/ontology/BurritoStand> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Business
+<http://fandom.com/ontology/Business> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/BusinessEntity
+<http://fandom.com/ontology/BusinessEntity> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CEO
+<http://fandom.com/ontology/CEO> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Cabin
+<http://fandom.com/ontology/Cabin> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Cafe
+<http://fandom.com/ontology/Cafe> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Camp
+<http://fandom.com/ontology/Camp> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CampaignMission
+<http://fandom.com/ontology/CampaignMission> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Campfire
+<http://fandom.com/ontology/Campfire> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CanyonTown
+<http://fandom.com/ontology/CanyonTown> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Car
+<http://fandom.com/ontology/Car> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CardGame
+<http://fandom.com/ontology/CardGame> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Cargo
+<http://fandom.com/ontology/Cargo> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Cave
+<http://fandom.com/ontology/Cave> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Cavern
+<http://fandom.com/ontology/Cavern> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Celebration
+<http://fandom.com/ontology/Celebration> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Champion
+<http://fandom.com/ontology/Champion> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/ChemicalElement
+<http://fandom.com/ontology/ChemicalElement> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Church
+<http://fandom.com/ontology/Church> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/City
+<http://fandom.com/ontology/City> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CityBuilder
+<http://fandom.com/ontology/CityBuilder> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CityPack
+<http://fandom.com/ontology/CityPack> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CityQuest
+<http://fandom.com/ontology/CityQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CivicDoctrine
+<http://fandom.com/ontology/CivicDoctrine> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Cleaner
+<http://fandom.com/ontology/Cleaner> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CloseInWeaponSystem
+<http://fandom.com/ontology/CloseInWeaponSystem> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Clothing
+<http://fandom.com/ontology/Clothing> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Club
+<http://fandom.com/ontology/Club> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ClubManager
+<http://fandom.com/ontology/ClubManager> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CoFounder
+<http://fandom.com/ontology/CoFounder> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CoOpMissionAchievement
+<http://fandom.com/ontology/CoOpMissionAchievement> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Coach
+<http://fandom.com/ontology/Coach> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CoalitionGovernment
+<http://fandom.com/ontology/CoalitionGovernment> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CodexEntry
+<http://fandom.com/ontology/CodexEntry> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Collectable
+<http://fandom.com/ontology/Collectable> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Collectible
+<http://fandom.com/ontology/Collectible> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ColonizationTechnology
+<http://fandom.com/ontology/ColonizationTechnology> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Commission
+<http://fandom.com/ontology/Commission> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CommonArea
+<http://fandom.com/ontology/CommonArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Company
+<http://fandom.com/ontology/Company> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CompanyBoss
+<http://fandom.com/ontology/CompanyBoss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Compendium
+<http://fandom.com/ontology/Compendium> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CompetitiveMode
+<http://fandom.com/ontology/CompetitiveMode> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CompetitiveTeam
+<http://fandom.com/ontology/CompetitiveTeam> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Conglomerate
+<http://fandom.com/ontology/Conglomerate> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Console
+<http://fandom.com/ontology/Console> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Construction
+<http://fandom.com/ontology/Construction> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ConstructionMaterial
+<http://fandom.com/ontology/ConstructionMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ConstructionPlatform
+<http://fandom.com/ontology/ConstructionPlatform> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ContentAddon
+<http://fandom.com/ontology/ContentAddon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CooldownSystem
+<http://fandom.com/ontology/CooldownSystem> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Core
+<http://fandom.com/ontology/Core> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CoreUpgrade
+<http://fandom.com/ontology/CoreUpgrade> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Coromon
+<http://fandom.com/ontology/Coromon> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Corporation
+<http://fandom.com/ontology/Corporation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CouncilBuilding
+<http://fandom.com/ontology/CouncilBuilding> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CouncilLeader
+<http://fandom.com/ontology/CouncilLeader> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CouncilMember
+<http://fandom.com/ontology/CouncilMember> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Country
+<http://fandom.com/ontology/Country> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CovertOperation
+<http://fandom.com/ontology/CovertOperation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingEquipment
+<http://fandom.com/ontology/CraftingEquipment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingItem
+<http://fandom.com/ontology/CraftingItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingMachine
+<http://fandom.com/ontology/CraftingMachine> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingMaterial
+<http://fandom.com/ontology/CraftingMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingStation
+<http://fandom.com/ontology/CraftingStation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CraftingStationEnhancement
+<http://fandom.com/ontology/CraftingStationEnhancement> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Crater
+<http://fandom.com/ontology/Crater> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Crew
+<http://fandom.com/ontology/Crew> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CrewMember
+<http://fandom.com/ontology/CrewMember> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/CrewResidence
+<http://fandom.com/ontology/CrewResidence> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/CustomRoshan
+<http://fandom.com/ontology/CustomRoshan> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DLC
+<http://fandom.com/ontology/DLC> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DLCCharacter
+<http://fandom.com/ontology/DLCCharacter> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DLCPack
+<http://fandom.com/ontology/DLCPack> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DLCPrison
+<http://fandom.com/ontology/DLCPrison> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DLCQuest
+<http://fandom.com/ontology/DLCQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DamageInflictingTool
+<http://fandom.com/ontology/DamageInflictingTool> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/DataDrive
+<http://fandom.com/ontology/DataDrive> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/DataHub
+<http://fandom.com/ontology/DataHub> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DataPoint
+<http://fandom.com/ontology/DataPoint> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DayQuest
+<http://fandom.com/ontology/DayQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DeathWishMission
+<http://fandom.com/ontology/DeathWishMission> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Decade
+<http://fandom.com/ontology/Decade> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Deck
+<http://fandom.com/ontology/Deck> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Deckbuilder
+<http://fandom.com/ontology/Deckbuilder> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/DefenseStructure
+<http://fandom.com/ontology/DefenseStructure> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/DefenseTechnology
+<http://fandom.com/ontology/DefenseTechnology> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/DefensiveStructure
+<http://fandom.com/ontology/DefensiveStructure> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Department
+<http://fandom.com/ontology/Department> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Device
+<http://fandom.com/ontology/Device> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Diagnosis
+<http://fandom.com/ontology/Diagnosis> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Dinosaur
+<http://fandom.com/ontology/Dinosaur> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Director
+<http://fandom.com/ontology/Director> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Dish
+<http://fandom.com/ontology/Dish> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Disk
+<http://fandom.com/ontology/Disk> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/District
+<http://fandom.com/ontology/District> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Doctrine
+<http://fandom.com/ontology/Doctrine> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Document
+<http://fandom.com/ontology/Document> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/DojoMission
+<http://fandom.com/ontology/DojoMission> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Dome
+<http://fandom.com/ontology/Dome> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DomeService
+<http://fandom.com/ontology/DomeService> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DomeServices
+<http://fandom.com/ontology/DomeServices> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DoomEngineMod
+<http://fandom.com/ontology/DoomEngineMod> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/DormApartment
+<http://fandom.com/ontology/DormApartment> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DownloadableContent
+<http://fandom.com/ontology/DownloadableContent> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Drug
+<http://fandom.com/ontology/Drug> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Dungeon
+<http://fandom.com/ontology/Dungeon> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/DungeonArea
+<http://fandom.com/ontology/DungeonArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Dye
+<http://fandom.com/ontology/Dye> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/EcologistFaction
+<http://fandom.com/ontology/EcologistFaction> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/EconomicStructure
+<http://fandom.com/ontology/EconomicStructure> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Effect
+<http://fandom.com/ontology/Effect> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/EffectModifier
+<http://fandom.com/ontology/EffectModifier> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/ElementalAbility
+<http://fandom.com/ontology/ElementalAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ElementalBoss
+<http://fandom.com/ontology/ElementalBoss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Emote
+<http://fandom.com/ontology/Emote> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Ending
+<http://fandom.com/ontology/Ending> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/EnergyWeapon
+<http://fandom.com/ontology/EnergyWeapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Environment
+<http://fandom.com/ontology/Environment> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/EnvironmentCommand
+<http://fandom.com/ontology/EnvironmentCommand> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Equipment
+<http://fandom.com/ontology/Equipment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/EscapeTeamDLCItem
+<http://fandom.com/ontology/EscapeTeamDLCItem> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/EventVenue
+<http://fandom.com/ontology/EventVenue> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Evidence
+<http://fandom.com/ontology/Evidence> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Executive
+<http://fandom.com/ontology/Executive> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ExiledDragoon
+<http://fandom.com/ontology/ExiledDragoon> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ExplorationQuest
+<http://fandom.com/ontology/ExplorationQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Exterior
+<http://fandom.com/ontology/Exterior> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Extractor
+<http://fandom.com/ontology/Extractor> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Facility
+<http://fandom.com/ontology/Facility> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/FacilityModification
+<http://fandom.com/ontology/FacilityModification> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Faction
+<http://fandom.com/ontology/Faction> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Factory
+<http://fandom.com/ontology/Factory> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Familiar
+<http://fandom.com/ontology/Familiar> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Farm
+<http://fandom.com/ontology/Farm> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/FarsideAnalysis
+<http://fandom.com/ontology/FarsideAnalysis> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Fauna
+<http://fandom.com/ontology/Fauna> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Feat
+<http://fandom.com/ontology/Feat> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/FictionalCorporation
+<http://fandom.com/ontology/FictionalCorporation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/FieldTile
+<http://fandom.com/ontology/FieldTile> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/FieldTool
+<http://fandom.com/ontology/FieldTool> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/FinalBoss
+<http://fandom.com/ontology/FinalBoss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Flooring
+<http://fandom.com/ontology/Flooring> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/FlooringWalls
+<http://fandom.com/ontology/FlooringWalls> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Food
+<http://fandom.com/ontology/Food> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ForcesOfNature
+<http://fandom.com/ontology/ForcesOfNature> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ForegroundSpray
+<http://fandom.com/ontology/ForegroundSpray> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/FragilePosition
+<http://fandom.com/ontology/FragilePosition> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Furniture
+<http://fandom.com/ontology/Furniture> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/FurnitureItem
+<http://fandom.com/ontology/FurnitureItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/FurnitureWallDecoration
+<http://fandom.com/ontology/FurnitureWallDecoration> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Gadget
+<http://fandom.com/ontology/Gadget> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GameAbility
+<http://fandom.com/ontology/GameAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GameConsole
+<http://fandom.com/ontology/GameConsole> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GameLocation
+<http://fandom.com/ontology/GameLocation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/GameObjective
+<http://fandom.com/ontology/GameObjective> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Garage
+<http://fandom.com/ontology/Garage> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Garden
+<http://fandom.com/ontology/Garden> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Gear
+<http://fandom.com/ontology/Gear> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Gemstone
+<http://fandom.com/ontology/Gemstone> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GeographicalArea
+<http://fandom.com/ontology/GeographicalArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Gloves
+<http://fandom.com/ontology/Gloves> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GoldTrophy
+<http://fandom.com/ontology/GoldTrophy> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/GoverningBody
+<http://fandom.com/ontology/GoverningBody> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Grindstone
+<http://fandom.com/ontology/Grindstone> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Ground
+<http://fandom.com/ontology/Ground> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/GroundTypePokemon
+<http://fandom.com/ontology/GroundTypePokemon> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Group
+<http://fandom.com/ontology/Group> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Guide
+<http://fandom.com/ontology/Guide> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Gym
+<http://fandom.com/ontology/Gym> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/HandheldConsole
+<http://fandom.com/ontology/HandheldConsole> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/HandheldGameConsole
+<http://fandom.com/ontology/HandheldGameConsole> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Harbour
+<http://fandom.com/ontology/Harbour> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Hardware
+<http://fandom.com/ontology/Hardware> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Hat
+<http://fandom.com/ontology/Hat> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Hazard
+<http://fandom.com/ontology/Hazard> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HeavyDefense
+<http://fandom.com/ontology/HeavyDefense> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/HeavyWeapon
+<http://fandom.com/ontology/HeavyWeapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/HeldItem
+<http://fandom.com/ontology/HeldItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Hex
+<http://fandom.com/ontology/Hex> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HexArea
+<http://fandom.com/ontology/HexArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HiddenBase
+<http://fandom.com/ontology/HiddenBase> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HiddenLevel
+<http://fandom.com/ontology/HiddenLevel> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HiddenQuest
+<http://fandom.com/ontology/HiddenQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HiddenRealm
+<http://fandom.com/ontology/HiddenRealm> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HiddenTrophy
+<http://fandom.com/ontology/HiddenTrophy> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Hideout
+<http://fandom.com/ontology/Hideout> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HidingPlace
+<http://fandom.com/ontology/HidingPlace> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HolographicQuest
+<http://fandom.com/ontology/HolographicQuest> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/HomeType
+<http://fandom.com/ontology/HomeType> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/House
+<http://fandom.com/ontology/House> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Houseware
+<http://fandom.com/ontology/Houseware> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Housing
+<http://fandom.com/ontology/Housing> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/HumanMandragora
+<http://fandom.com/ontology/HumanMandragora> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/HumanMutant
+<http://fandom.com/ontology/HumanMutant> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/Humanoid
+<http://fandom.com/ontology/Humanoid> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/ImmobileRangedTroop
+<http://fandom.com/ontology/ImmobileRangedTroop> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/IndoorArea
+<http://fandom.com/ontology/IndoorArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/IndustrialArea
+<http://fandom.com/ontology/IndustrialArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Infrastructure
+<http://fandom.com/ontology/Infrastructure> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/IngredientProvider
+<http://fandom.com/ontology/IngredientProvider> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Injectable
+<http://fandom.com/ontology/Injectable> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Insect
+<http://fandom.com/ontology/Insect> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Inserter
+<http://fandom.com/ontology/Inserter> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Installment
+<http://fandom.com/ontology/Installment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Instrument
+<http://fandom.com/ontology/Instrument> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/InteractiveArea
+<http://fandom.com/ontology/InteractiveArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/InteractiveObject
+<http://fandom.com/ontology/InteractiveObject> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/IntergovernmentalMilitaryAlliance
+<http://fandom.com/ontology/IntergovernmentalMilitaryAlliance> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/IntermediateItem
+<http://fandom.com/ontology/IntermediateItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/InventoryItem
+<http://fandom.com/ontology/InventoryItem> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Island
+<http://fandom.com/ontology/Island> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Item
+<http://fandom.com/ontology/Item> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Jewellery
+<http://fandom.com/ontology/Jewellery> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/KeyQuest
+<http://fandom.com/ontology/KeyQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Knight
+<http://fandom.com/ontology/Knight> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/Lamp
+<http://fandom.com/ontology/Lamp> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Landmark
+<http://fandom.com/ontology/Landmark> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Landmine
+<http://fandom.com/ontology/Landmine> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Landscape
+<http://fandom.com/ontology/Landscape> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Language
+<http://fandom.com/ontology/Language> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Leader
+<http://fandom.com/ontology/Leader> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Leadership
+<http://fandom.com/ontology/Leadership> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Level
+<http://fandom.com/ontology/Level> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/LevelMission
+<http://fandom.com/ontology/LevelMission> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Lighthouse
+<http://fandom.com/ontology/Lighthouse> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/LimitedTimeEvent
+<http://fandom.com/ontology/LimitedTimeEvent> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/LivingQuarters
+<http://fandom.com/ontology/LivingQuarters> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Location
+<http://fandom.com/ontology/Location> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Locomotive
+<http://fandom.com/ontology/Locomotive> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/LongBlock
+<http://fandom.com/ontology/LongBlock> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Lore
+<http://fandom.com/ontology/Lore> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/LoreDocument
+<http://fandom.com/ontology/LoreDocument> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/LoreEvent
+<http://fandom.com/ontology/LoreEvent> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/LoreItem
+<http://fandom.com/ontology/LoreItem> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Machine
+<http://fandom.com/ontology/Machine> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MagicAbility
+<http://fandom.com/ontology/MagicAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MagicalRealm
+<http://fandom.com/ontology/MagicalRealm> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Main
+<http://fandom.com/ontology/Main> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MainHub
+<http://fandom.com/ontology/MainHub> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mainframe
+<http://fandom.com/ontology/Mainframe> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MainframeBranch
+<http://fandom.com/ontology/MainframeBranch> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MaintenanceRequest
+<http://fandom.com/ontology/MaintenanceRequest> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MaleCharacter
+<http://fandom.com/ontology/MaleCharacter> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/ManagementSim
+<http://fandom.com/ontology/ManagementSim> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ManagementTacticalCombat
+<http://fandom.com/ontology/ManagementTacticalCombat> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Map
+<http://fandom.com/ontology/Map> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MasterRelayer
+<http://fandom.com/ontology/MasterRelayer> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Material
+<http://fandom.com/ontology/Material> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Maze
+<http://fandom.com/ontology/Maze> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mech
+<http://fandom.com/ontology/Mech> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mecha
+<http://fandom.com/ontology/Mecha> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mechanical
+<http://fandom.com/ontology/Mechanical> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MechanicalDevice
+<http://fandom.com/ontology/MechanicalDevice> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MechanicalItem
+<http://fandom.com/ontology/MechanicalItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Mechanism
+<http://fandom.com/ontology/Mechanism> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MedicalEquipment
+<http://fandom.com/ontology/MedicalEquipment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MediumBoss
+<http://fandom.com/ontology/MediumBoss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Memento
+<http://fandom.com/ontology/Memento> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Memory
+<http://fandom.com/ontology/Memory> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MentionedOnlyLocation
+<http://fandom.com/ontology/MentionedOnlyLocation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mercenary
+<http://fandom.com/ontology/Mercenary> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/MercenaryCompany
+<http://fandom.com/ontology/MercenaryCompany> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Metal
+<http://fandom.com/ontology/Metal> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MetroArea
+<http://fandom.com/ontology/MetroArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryArea
+<http://fandom.com/ontology/MilitaryArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryBuilding
+<http://fandom.com/ontology/MilitaryBuilding> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryDivision
+<http://fandom.com/ontology/MilitaryDivision> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryFormation
+<http://fandom.com/ontology/MilitaryFormation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryGroup
+<http://fandom.com/ontology/MilitaryGroup> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryOperation
+<http://fandom.com/ontology/MilitaryOperation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryOrganization
+<http://fandom.com/ontology/MilitaryOrganization> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryStructure
+<http://fandom.com/ontology/MilitaryStructure> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryTrainingGroup
+<http://fandom.com/ontology/MilitaryTrainingGroup> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MilitaryUnit
+<http://fandom.com/ontology/MilitaryUnit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mimic
+<http://fandom.com/ontology/Mimic> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Miner
+<http://fandom.com/ontology/Miner> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MiningTechnology
+<http://fandom.com/ontology/MiningTechnology> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MissionArea
+<http://fandom.com/ontology/MissionArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mob
+<http://fandom.com/ontology/Mob> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/MobileCastle
+<http://fandom.com/ontology/MobileCastle> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mode
+<http://fandom.com/ontology/Mode> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Module
+<http://fandom.com/ontology/Module> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mook
+<http://fandom.com/ontology/Mook> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Mount
+<http://fandom.com/ontology/Mount> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/MovementOperator
+<http://fandom.com/ontology/MovementOperator> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Movie
+<http://fandom.com/ontology/Movie> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Munition
+<http://fandom.com/ontology/Munition> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MunitionsUnit
+<http://fandom.com/ontology/MunitionsUnit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Music
+<http://fandom.com/ontology/Music> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/MusicCollection
+<http://fandom.com/ontology/MusicCollection> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/MusicItem
+<http://fandom.com/ontology/MusicItem> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Mutant
+<http://fandom.com/ontology/Mutant> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/NPC
+<http://fandom.com/ontology/NPC> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Narrative
+<http://fandom.com/ontology/Narrative> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/NaturalResource
+<http://fandom.com/ontology/NaturalResource> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/NatureClubItem
+<http://fandom.com/ontology/NatureClubItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Neighborhood
+<http://fandom.com/ontology/Neighborhood> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/NetworkNode
+<http://fandom.com/ontology/NetworkNode> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/NightSprings
+<http://fandom.com/ontology/NightSprings> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Nightclub
+<http://fandom.com/ontology/Nightclub> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/NobleGas
+<http://fandom.com/ontology/NobleGas> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/NobleHouse
+<http://fandom.com/ontology/NobleHouse> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Node
+<http://fandom.com/ontology/Node> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/NormalAbility
+<http://fandom.com/ontology/NormalAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/NoticeBoardQuest
+<http://fandom.com/ontology/NoticeBoardQuest> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Nursery
+<http://fandom.com/ontology/Nursery> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Oasis
+<http://fandom.com/ontology/Oasis> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Object
+<http://fandom.com/ontology/Object> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Office
+<http://fandom.com/ontology/Office> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/OnlineArea
+<http://fandom.com/ontology/OnlineArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Operation
+<http://fandom.com/ontology/Operation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Operator
+<http://fandom.com/ontology/Operator> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Order
+<http://fandom.com/ontology/Order> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Organic
+<http://fandom.com/ontology/Organic> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Organization
+<http://fandom.com/ontology/Organization> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Origin
+<http://fandom.com/ontology/Origin> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/OriginalSoundtrack
+<http://fandom.com/ontology/OriginalSoundtrack> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Outfit
+<http://fandom.com/ontology/Outfit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/OverworldArea
+<http://fandom.com/ontology/OverworldArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/OzKit
+<http://fandom.com/ontology/OzKit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Pack
+<http://fandom.com/ontology/Pack> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Painting
+<http://fandom.com/ontology/Painting> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/PartyTrinket
+<http://fandom.com/ontology/PartyTrinket> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Passenger
+<http://fandom.com/ontology/Passenger> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Passive
+<http://fandom.com/ontology/Passive> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PassiveCollectible
+<http://fandom.com/ontology/PassiveCollectible> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/PatchNotes
+<http://fandom.com/ontology/PatchNotes> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Photo
+<http://fandom.com/ontology/Photo> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PhysicalAbility
+<http://fandom.com/ontology/PhysicalAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Planet
+<http://fandom.com/ontology/Planet> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Platform
+<http://fandom.com/ontology/Platform> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Podcast
+<http://fandom.com/ontology/Podcast> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/PoliticalCompany
+<http://fandom.com/ontology/PoliticalCompany> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/PreOrderQuest
+<http://fandom.com/ontology/PreOrderQuest> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Prison
+<http://fandom.com/ontology/Prison> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PrisonCell
+<http://fandom.com/ontology/PrisonCell> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PrivateCorporation
+<http://fandom.com/ontology/PrivateCorporation> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/PrivateSecurity
+<http://fandom.com/ontology/PrivateSecurity> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ProcessingMachine
+<http://fandom.com/ontology/ProcessingMachine> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Production
+<http://fandom.com/ontology/Production> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ProductionBuilding
+<http://fandom.com/ontology/ProductionBuilding> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ProductionFacility
+<http://fandom.com/ontology/ProductionFacility> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ProfileIcon
+<http://fandom.com/ontology/ProfileIcon> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Project
+<http://fandom.com/ontology/Project> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ProjectPart
+<http://fandom.com/ontology/ProjectPart> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Projectile
+<http://fandom.com/ontology/Projectile> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Protagonist
+<http://fandom.com/ontology/Protagonist> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/ProvingGroundProject
+<http://fandom.com/ontology/ProvingGroundProject> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PuzzlePlatform
+<http://fandom.com/ontology/PuzzlePlatform> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PuzzleRoom
+<http://fandom.com/ontology/PuzzleRoom> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/PyromancerSkill
+<http://fandom.com/ontology/PyromancerSkill> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Pyromancy
+<http://fandom.com/ontology/Pyromancy> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/QALead
+<http://fandom.com/ontology/QALead> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/RPG
+<http://fandom.com/ontology/RPG> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/RangedCavalry
+<http://fandom.com/ontology/RangedCavalry> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/RangedWeapon
+<http://fandom.com/ontology/RangedWeapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/RareCollectible
+<http://fandom.com/ontology/RareCollectible> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/RawMaterial
+<http://fandom.com/ontology/RawMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Realm
+<http://fandom.com/ontology/Realm> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Record
+<http://fandom.com/ontology/Record> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Recording
+<http://fandom.com/ontology/Recording> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/RefinedCraftingMaterial
+<http://fandom.com/ontology/RefinedCraftingMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Region
+<http://fandom.com/ontology/Region> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/RegionCity
+<http://fandom.com/ontology/RegionCity> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Relay
+<http://fandom.com/ontology/Relay> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Relic
+<http://fandom.com/ontology/Relic> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/RelicCraftingMaterial
+<http://fandom.com/ontology/RelicCraftingMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ReligiousOrganization
+<http://fandom.com/ontology/ReligiousOrganization> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Reptile
+<http://fandom.com/ontology/Reptile> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Republic
+<http://fandom.com/ontology/Republic> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Research
+<http://fandom.com/ontology/Research> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ResearchCentre
+<http://fandom.com/ontology/ResearchCentre> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResearchFacility
+<http://fandom.com/ontology/ResearchFacility> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResearchProject
+<http://fandom.com/ontology/ResearchProject> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResearchRecordsReports
+<http://fandom.com/ontology/ResearchRecordsReports> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ResearchTechnology
+<http://fandom.com/ontology/ResearchTechnology> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Residential
+<http://fandom.com/ontology/Residential> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResidentialHome
+<http://fandom.com/ontology/ResidentialHome> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResidentialStructure
+<http://fandom.com/ontology/ResidentialStructure> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Resource
+<http://fandom.com/ontology/Resource> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceArea
+<http://fandom.com/ontology/ResourceArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceBuilding
+<http://fandom.com/ontology/ResourceBuilding> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceCollector
+<http://fandom.com/ontology/ResourceCollector> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceGatheringBuilding
+<http://fandom.com/ontology/ResourceGatheringBuilding> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceManagement
+<http://fandom.com/ontology/ResourceManagement> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceProduction
+<http://fandom.com/ontology/ResourceProduction> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ResourceProductionSite
+<http://fandom.com/ontology/ResourceProductionSite> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Restaurant
+<http://fandom.com/ontology/Restaurant> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Road
+<http://fandom.com/ontology/Road> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Roadside
+<http://fandom.com/ontology/Roadside> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Roguelite
+<http://fandom.com/ontology/Roguelite> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Room
+<http://fandom.com/ontology/Room> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Rug
+<http://fandom.com/ontology/Rug> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Ruins
+<http://fandom.com/ontology/Ruins> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Ruler
+<http://fandom.com/ontology/Ruler> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Rundown
+<http://fandom.com/ontology/Rundown> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Rune
+<http://fandom.com/ontology/Rune> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Runestone
+<http://fandom.com/ontology/Runestone> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SQUID
+<http://fandom.com/ontology/SQUID> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SavePoint
+<http://fandom.com/ontology/SavePoint> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Scenario
+<http://fandom.com/ontology/Scenario> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Scene
+<http://fandom.com/ontology/Scene> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Scenery
+<http://fandom.com/ontology/Scenery> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Scout
+<http://fandom.com/ontology/Scout> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SeabaseModule
+<http://fandom.com/ontology/SeabaseModule> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SeasonalEvent
+<http://fandom.com/ontology/SeasonalEvent> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Seating
+<http://fandom.com/ontology/Seating> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Secondary
+<http://fandom.com/ontology/Secondary> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SecondaryWeapon
+<http://fandom.com/ontology/SecondaryWeapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SecretLevel
+<http://fandom.com/ontology/SecretLevel> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SecretRoom
+<http://fandom.com/ontology/SecretRoom> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sedan
+<http://fandom.com/ontology/Sedan> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sentinel
+<http://fandom.com/ontology/Sentinel> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Server
+<http://fandom.com/ontology/Server> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Settlement
+<http://fandom.com/ontology/Settlement> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SettlementUpgrade
+<http://fandom.com/ontology/SettlementUpgrade> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Shields
+<http://fandom.com/ontology/Shields> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Ship
+<http://fandom.com/ontology/Ship> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ShipEquipment
+<http://fandom.com/ontology/ShipEquipment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ShoppingMall
+<http://fandom.com/ontology/ShoppingMall> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ShopsAndFacilities
+<http://fandom.com/ontology/ShopsAndFacilities> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ShortFilm
+<http://fandom.com/ontology/ShortFilm> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Show
+<http://fandom.com/ontology/Show> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Shrine
+<http://fandom.com/ontology/Shrine> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Side
+<http://fandom.com/ontology/Side> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SideQuest
+<http://fandom.com/ontology/SideQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sidequest
+<http://fandom.com/ontology/Sidequest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sigil
+<http://fandom.com/ontology/Sigil> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SilverTrophy
+<http://fandom.com/ontology/SilverTrophy> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Site
+<http://fandom.com/ontology/Site> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Skin
+<http://fandom.com/ontology/Skin> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/Skull
+<http://fandom.com/ontology/Skull> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Slime
+<http://fandom.com/ontology/Slime> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SmithyMaterial
+<http://fandom.com/ontology/SmithyMaterial> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SocialMediaCompany
+<http://fandom.com/ontology/SocialMediaCompany> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Soggies
+<http://fandom.com/ontology/Soggies> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Souvenir
+<http://fandom.com/ontology/Souvenir> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SpaceStation
+<http://fandom.com/ontology/SpaceStation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Spacecraft
+<http://fandom.com/ontology/Spacecraft> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Spaceport
+<http://fandom.com/ontology/Spaceport> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SpecialArea
+<http://fandom.com/ontology/SpecialArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SpecialEvent
+<http://fandom.com/ontology/SpecialEvent> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/SpecialItem
+<http://fandom.com/ontology/SpecialItem> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/SpecialOperationsUnit
+<http://fandom.com/ontology/SpecialOperationsUnit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/SpecializedUnit
+<http://fandom.com/ontology/SpecializedUnit> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Species
+<http://fandom.com/ontology/Species> rdfs:subClassOf <http://fandom.com/ontology/LivingBeingHighLevel> .
+
+
+###  http://fandom.com/ontology/Squadron
+<http://fandom.com/ontology/Squadron> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Staff
+<http://fandom.com/ontology/Staff> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Stage
+<http://fandom.com/ontology/Stage> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/StageOfGrief
+<http://fandom.com/ontology/StageOfGrief> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Stamp
+<http://fandom.com/ontology/Stamp> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/StartingArea
+<http://fandom.com/ontology/StartingArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Station
+<http://fandom.com/ontology/Station> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/StationaryDevice
+<http://fandom.com/ontology/StationaryDevice> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Statue
+<http://fandom.com/ontology/Statue> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/StealthQuest
+<http://fandom.com/ontology/StealthQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sticker
+<http://fandom.com/ontology/Sticker> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Storage
+<http://fandom.com/ontology/Storage> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/StorageContainer
+<http://fandom.com/ontology/StorageContainer> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/StorageItem
+<http://fandom.com/ontology/StorageItem> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Store
+<http://fandom.com/ontology/Store> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/StoryArea
+<http://fandom.com/ontology/StoryArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Strand
+<http://fandom.com/ontology/Strand> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/StreetGang
+<http://fandom.com/ontology/StreetGang> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Structure
+<http://fandom.com/ontology/Structure> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Studio
+<http://fandom.com/ontology/Studio> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SubBattlefield
+<http://fandom.com/ontology/SubBattlefield> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SubBoss
+<http://fandom.com/ontology/SubBoss> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/SubQuest
+<http://fandom.com/ontology/SubQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SuburbanTown
+<http://fandom.com/ontology/SuburbanTown> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SummonUnit
+<http://fandom.com/ontology/SummonUnit> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/SupplyQuest
+<http://fandom.com/ontology/SupplyQuest> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SupportItem
+<http://fandom.com/ontology/SupportItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SupportSkillGem
+<http://fandom.com/ontology/SupportSkillGem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/SurrealArea
+<http://fandom.com/ontology/SurrealArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Sword
+<http://fandom.com/ontology/Sword> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/System
+<http://fandom.com/ontology/System> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/TacticalRPG
+<http://fandom.com/ontology/TacticalRPG> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/TacticalTeamLeader
+<http://fandom.com/ontology/TacticalTeamLeader> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Tactics
+<http://fandom.com/ontology/Tactics> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/TaskForce
+<http://fandom.com/ontology/TaskForce> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Taskmaster
+<http://fandom.com/ontology/Taskmaster> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Tavern
+<http://fandom.com/ontology/Tavern> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Team
+<http://fandom.com/ontology/Team> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/TeamScoreMode
+<http://fandom.com/ontology/TeamScoreMode> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/TechResearch
+<http://fandom.com/ontology/TechResearch> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Temple
+<http://fandom.com/ontology/Temple> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TempleRitual
+<http://fandom.com/ontology/TempleRitual> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Temtem
+<http://fandom.com/ontology/Temtem> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Terrain
+<http://fandom.com/ontology/Terrain> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TerritorialFaction
+<http://fandom.com/ontology/TerritorialFaction> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TerroristReligiousOrganization
+<http://fandom.com/ontology/TerroristReligiousOrganization> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/TheWilliamsCollection
+<http://fandom.com/ontology/TheWilliamsCollection> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TheologicalWritings
+<http://fandom.com/ontology/TheologicalWritings> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/TitanPrimaryWeapon
+<http://fandom.com/ontology/TitanPrimaryWeapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Tool
+<http://fandom.com/ontology/Tool> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Tour
+<http://fandom.com/ontology/Tour> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Tower
+<http://fandom.com/ontology/Tower> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Town
+<http://fandom.com/ontology/Town> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TownService
+<http://fandom.com/ontology/TownService> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Townhouse
+<http://fandom.com/ontology/Townhouse> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Townie
+<http://fandom.com/ontology/Townie> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Townsfolk
+<http://fandom.com/ontology/Townsfolk> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Townspeople
+<http://fandom.com/ontology/Townspeople> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/ToxicAbility
+<http://fandom.com/ontology/ToxicAbility> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Toy
+<http://fandom.com/ontology/Toy> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Track
+<http://fandom.com/ontology/Track> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TrackInformation
+<http://fandom.com/ontology/TrackInformation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TrainStation
+<http://fandom.com/ontology/TrainStation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/TrainingFacility
+<http://fandom.com/ontology/TrainingFacility> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Trapper
+<http://fandom.com/ontology/Trapper> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Traveler
+<http://fandom.com/ontology/Traveler> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Treasure
+<http://fandom.com/ontology/Treasure> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Trick
+<http://fandom.com/ontology/Trick> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/TrickeryCard
+<http://fandom.com/ontology/TrickeryCard> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/TriggeringEvent
+<http://fandom.com/ontology/TriggeringEvent> rdfs:subClassOf <http://fandom.com/ontology/EventHighLevel> .
+
+
+###  http://fandom.com/ontology/Trinket
+<http://fandom.com/ontology/Trinket> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Turret
+<http://fandom.com/ontology/Turret> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UFO
+<http://fandom.com/ontology/UFO> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/UnderTheSeaLand
+<http://fandom.com/ontology/UnderTheSeaLand> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Union
+<http://fandom.com/ontology/Union> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Unit
+<http://fandom.com/ontology/Unit> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UnitCard
+<http://fandom.com/ontology/UnitCard> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UnitTrainingFacility
+<http://fandom.com/ontology/UnitTrainingFacility> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UnitType
+<http://fandom.com/ontology/UnitType> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UniversityOrganization
+<http://fandom.com/ontology/UniversityOrganization> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Unknown
+<http://fandom.com/ontology/Unknown> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/UpgradeComponent
+<http://fandom.com/ontology/UpgradeComponent> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/UsableItem
+<http://fandom.com/ontology/UsableItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Valuable
+<http://fandom.com/ontology/Valuable> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/ValuableItem
+<http://fandom.com/ontology/ValuableItem> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Valuables
+<http://fandom.com/ontology/Valuables> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Vegetation
+<http://fandom.com/ontology/Vegetation> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Vehicle
+<http://fandom.com/ontology/Vehicle> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/VehicleManufacturer
+<http://fandom.com/ontology/VehicleManufacturer> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Village
+<http://fandom.com/ontology/Village> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Wall
+<http://fandom.com/ontology/Wall> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WallItem
+<http://fandom.com/ontology/WallItem> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Wallpaper
+<http://fandom.com/ontology/Wallpaper> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/WanderingNPC
+<http://fandom.com/ontology/WanderingNPC> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Warden
+<http://fandom.com/ontology/Warden> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Waystation
+<http://fandom.com/ontology/Waystation> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Weapon
+<http://fandom.com/ontology/Weapon> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/WeaponAttachment
+<http://fandom.com/ontology/WeaponAttachment> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/WeaponPlatform
+<http://fandom.com/ontology/WeaponPlatform> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WeaponSkin
+<http://fandom.com/ontology/WeaponSkin> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/WeaponTechnology
+<http://fandom.com/ontology/WeaponTechnology> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/WeeklySchedule
+<http://fandom.com/ontology/WeeklySchedule> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Widget
+<http://fandom.com/ontology/Widget> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/Wielder
+<http://fandom.com/ontology/Wielder> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Wilderness
+<http://fandom.com/ontology/Wilderness> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Wishstone
+<http://fandom.com/ontology/Wishstone> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WorkProducingMachine
+<http://fandom.com/ontology/WorkProducingMachine> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Workshop
+<http://fandom.com/ontology/Workshop> rdfs:subClassOf <http://fandom.com/ontology/OrganizationHighLevel> .
+
+
+###  http://fandom.com/ontology/Workstation
+<http://fandom.com/ontology/Workstation> rdfs:subClassOf <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://fandom.com/ontology/World
+<http://fandom.com/ontology/World> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WorldArea
+<http://fandom.com/ontology/WorldArea> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WorldQuest
+<http://fandom.com/ontology/WorldQuest> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/WraithLair
+<http://fandom.com/ontology/WraithLair> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+###  http://fandom.com/ontology/Zone
+<http://fandom.com/ontology/Zone> rdfs:subClassOf <http://fandom.com/ontology/LocationHighLevel> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Pokemon
+<http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Pokemon> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToGenre> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Role-Playing> ;
+                                                                      :hasThing :Thunderbolt .
+
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#Dark_Souls
+:Dark_Souls rdf:type owl:NamedIndividual ,
+                     <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game> ;
+            <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToGenre> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Role-Playing> ;
+            :hasThing :FireBall .
+
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#Fantasy
+:Fantasy rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Genre> .
+
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#FireBall
+:FireBall rdf:type owl:NamedIndividual ,
+                   <http://fandom.com/ontology/AbilityHighLevel> ,
+                   <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+###  http://www.semanticweb.org/mokrota/ontologies/2024/9/untitled-ontology-5#Thunderbolt
+:Thunderbolt rdf:type owl:NamedIndividual ,
+                      <http://fandom.com/ontology/AbilityHighLevel> ,
+                      <http://fandom.com/ontology/ObjectHighLevel> .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:g rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:t rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "RPG" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasThing ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :t
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://fandom.com/ontology/AbilityHighLevel> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToGenre> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Role-Playing>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Fantasy" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/Game> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasThing ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :t
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://fandom.com/ontology/RaceHighLevel> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/kiran/ontologies/2024/9/ontoJogo/belongsToGenre> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Fantasy
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
